@@ -22,7 +22,6 @@ pub struct Options {
     #[arg(long, value_name = "FILE", help = "Optional name for .proof file")]
     pub proof_name: Option<String>,
     #[arg(short = 'd', long, value_name = "FILE")]
-    #[arg(short = 'd', long, value_name = "FILE")]
     pub doc: String,
     #[arg(short = 'g', long, value_name = "FILE")]
     pub grammar: String,

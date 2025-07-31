@@ -1,6 +1,6 @@
 
-# cargo clean 
-# cargo build --release --features 'metrics para' 
+cargo clean 
+cargo build --release --features 'metrics para' 
 
 
 echo "ark" 
@@ -10,12 +10,12 @@ do
 echo "$i"
 for j in "${b_ark[@]}"
 do
-./target/release/coral -d ./tests/test_docs/toml/arkr1cs_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_ark_coral.txt --commit
+./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --commit
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_ark_coral ./target/release/coral -d ./tests/test_docs/toml/arkr1cs_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_ark_coral.txt --prove
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t3_coral ./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --prove
 
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_ark_coral ./target/release/coral -d ./tests/test_docs/toml/arkr1cs_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_ark_coral.txt --verify
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t3_coral ./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --verify
 done 
 done 
 
@@ -26,11 +26,11 @@ do
 echo "$i"
 for j in "${b_coral[@]}"
 do
-./target/release/coral -d ./tests/test_docs/toml/coral_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_coral_coral.txt --commit
+./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --commit
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_coral_coral ./target/release/coral -d ./tests/test_docs/toml/coral_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_coral_coral.txt --prove
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t2_coral ./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_coral_coral ./target/release/coral -d ./tests/test_docs/toml/coral_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_coral_coral.txt --verify
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t2_coral ./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --verify
 done 
 done 
 
@@ -41,11 +41,11 @@ do
 echo "$i"
 for j in "${b_small[@]}"
 do
-./target/release/coral -d ./tests/test_docs/toml/small_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_small_coral.txt --commit
+./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --commit
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_small_coral ./target/release/coral -d ./tests/test_docs/toml/small_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_small_coral.txt --prove
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t1_coral ./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_small_coral ./target/release/coral -d ./tests/test_docs/toml/small_toml.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_small_coral.txt --verify
+RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t1_coral ./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --verify
 done 
 done 
 
