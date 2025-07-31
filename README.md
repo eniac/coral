@@ -2,7 +2,7 @@
 # Coral
 
 This is an implementation of Coral, a system for generating zero-knowledge proofs that a committed document matches is consistent with a public Context Free Grammar
-The details of Reef are described in our paper: [Coral: Fast Succinct Non-Interactive Zero-Knowledge CFG Proofs](https://eprint.iacr.org/2023/1886).
+The details of Coral are described in our paper: [Coral: Fast Succinct Non-Interactive Zero-Knowledge CFG Proofs](https://eprint.iacr.org/2023/1886).
 
 ## Compile
 
@@ -45,7 +45,7 @@ commitment and proof files. This is optional - Coral will choose a name for the
 commitment/proof if you do not. 
 
 ## Perpetual Powers of Tau 
-You will need a local copy of the [Perpetual Powers of Tau](https://github.com/privacy-scaling-explorations/perpetualpowersoftau) to run Coral. Coral is hardcoded to use **./ppot_0080_23.ptau*. However you can use whichever one you prefer by change the specified file [here](https://github.com/eniac/coral/blob/main/src/solver.rs#L841) and [here](https://github.com/eniac/coral/blob/main/src/util.rs#L129)
+You will need a local copy of the [Perpetual Powers of Tau](https://github.com/privacy-scaling-explorations/perpetualpowersoftau) to run Coral. Coral is hardcoded to use **./ppot_0080_23.ptau*. However, you can use whichever one you prefer by changing the specified file [here](https://github.com/eniac/coral/blob/main/src/solver.rs#L841) and [here](https://github.com/eniac/coral/blob/main/src/util.rs#L129).
 
 ## Sample Grammars
 The grammars directory contains sample grammars for a JSON, TOML, and a subset of C. You can run Coral for JSON with the following
