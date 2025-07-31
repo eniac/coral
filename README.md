@@ -13,6 +13,8 @@ rustup toolchain install nightly
 rustup default nightly
 ```
 
+You can then compile with 
+
 ```
 cargo build --release
 ```
