@@ -45,7 +45,7 @@ commitment and proof files. This is optional - Coral will choose a name for the
 commitment/proof if you do not. 
 
 ## Perpetual Powers of Tau 
-You will need a local copy of the [Perpetual Powers of Tau](https://github.com/privacy-scaling-explorations/perpetualpowersoftau) to run Coral. Coral is hardcoded to use **./ppot_0080_23.ptau*. However you can use whichever one you prefer by change the specified file [here]() and [here]()
+You will need a local copy of the [Perpetual Powers of Tau](https://github.com/privacy-scaling-explorations/perpetualpowersoftau) to run Coral. Coral is hardcoded to use **./ppot_0080_23.ptau*. However you can use whichever one you prefer by change the specified file [here](https://github.com/eniac/coral/blob/main/src/solver.rs#L841) and [here](https://github.com/eniac/coral/blob/main/src/util.rs#L129)
 
 ## Sample Grammars
 The grammars directory contains sample grammars for a JSON, TOML, and a subset of C. You can run Coral for JSON with the following
