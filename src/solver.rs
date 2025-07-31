@@ -427,7 +427,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         let base = Self {
             empty: false,
-            //Blind for hashchain
+            //Blind for KZG
             blind: doc_blind,
             //Public Values
             negative_one: F::from(-1),

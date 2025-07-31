@@ -1,4 +1,3 @@
-// use crate::circuit::*;
 use crate::{circuit::multi_node_step, parser::GrammarGraph, solver::*, util::*};
 use ark_bn254::Bn254;
 use ark_poly_commit::kzg10::{self, Commitment, Powers};
@@ -36,7 +35,6 @@ pub struct ProverInfo {
     pub random_layer: RandomLayer<E1, E2>,
 }
 
-// #[derive(Clone, Debug)]
 #[serde_with::serde_as]
 #[derive(Serialize, Deserialize)]
 pub struct ProverOutput {
@@ -46,7 +44,6 @@ pub struct ProverOutput {
     #[serde_as(as = "CompressedChecked<Option<kzg10::Proof<Bn254>>>")]
     pub doc_commit_proof: Option<kzg10::Proof<Bn254>>,
     pub z_0: Vec<N1>,
-    // pub is: Option<AF>,
 }
 #[derive(CanonicalSerialize, CanonicalDeserialize)]
 
@@ -260,8 +257,6 @@ pub fn run_prove(
         #[cfg(feature = "metrics")]
         log::stop(Component::Prover, format!("prove_{i}"));
 
-        let v_res = recursive_snark.verify(pp, i + 1, &z0_primary);
-        assert!(v_res.is_ok(), "{:?}", v_res);
         if i + 1 < n_rounds {
             circuit_primary = recv.recv().unwrap().unwrap();
         }
@@ -461,8 +456,6 @@ pub fn run_prover<ArkF: ArkPrimeField>(
         {
             log::stop(Component::Prover, format!("prove_{}", i));
         }
-        let v_res = recursive_snark.verify(pp, i + 1, &z0_primary);
-        assert!(v_res.is_ok(), "{:?}", v_res);
 
         if i + 1 < n_rounds {
             println!("gen round {:?}", i + 1);

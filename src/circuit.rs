@@ -200,7 +200,6 @@ pub fn trans_push_wrapper<F: ArkPrimeField>(
     wires: &mut CoralWires<F>,
     memory: &mut RunningMemWires<F>,
 ) -> Result<(), SynthesisError> {
-    //  println!("Trans push wrapper {:?}", condition.value());
     wires.prev_step_t_ops = condition.select(&Boolean::TRUE, &wires.prev_step_t_ops)?;
 
     let _pushed =
@@ -308,10 +307,6 @@ pub fn is_terminal<F: ArkPrimeField>(
 
     let mut new_wires = wires.clone();
 
-    // println!("Is terminal wires");
-    // print_wires(&new_wires);
-    //CoralWires::clean_copy(wires);
-
     // Check is leaf
     let child_check = child.is_eq(tree_null_val)?;
     let sib_not_null = sib.is_neq(tree_null_val)?;
@@ -328,7 +323,6 @@ pub fn is_terminal<F: ArkPrimeField>(
         .map(|x| FpVar::new_witness(cs.clone(), || Ok(x)).unwrap())
         .collect();
 
-    // println!("Is np: {:?}", is_np.value());
     assert_filler(&np_lookup_addr, &polys, &!&is_np, csc, cs.clone())?;
 
     np_read(
@@ -397,11 +391,6 @@ pub fn not_terminal<F: ArkPrimeField>(
 ) -> Result<CoralWires<F>, SynthesisError> {
     let mut new_wires = wires.clone();
 
-    // println!("not terminal wires");
-    // print_wires(&new_wires);
-
-    // CoralWires::clean_copy(wires);
-
     //Is sib Null?
     let sib_check = sib.is_neq(tree_null_val)?;
 
@@ -440,9 +429,6 @@ pub fn not_terminal<F: ArkPrimeField>(
     //np
     rule_lookup_vec.push(FpVar::from(cur_is_np & &is_not_root_check));
 
-    // for _ in 0..csc.vals_size - rule_lookup_vec.len() {
-    //     rule_lookup_vec.push(FpVar::new_witness(cs.clone(), || Ok(F::ZERO))?);
-    // }
 
     //Switch point for rule push
     let switch_var = FpVar::new_witness(cs.clone(), || Ok(csc.switch_wits[round_num]))?;
@@ -518,26 +504,16 @@ pub fn node_circuit<F: ArkPrimeField>(
     should_run: &Boolean<F>,
     tree_null_val: &FpVar<F>,
     shift: &FpVar<F>,
-    offsets: &[FpVar<F>], //rule stack, trans stack, tree, rule, np
+    offsets: &[FpVar<F>], 
     cs: ConstraintSystemRef<F>,
 ) -> Result<CoralWires<F>, SynthesisError> {
     let round_num = csc.round_num;
 
-    // // println!("Node Circuit round num {:?}", round_num);
     // //Current tree location information
     let node_elem = csc.node_wits[round_num].clone();
 
-    // println!("Node elem:{:?}", node_elem);
-
     let cur_node = wires.cur_node_id.clone();
 
-    // // println!(
-    // //     "Node Number {:?} , Cur Node ID {:?}, Is terminal {:?} {:?}",
-    // //     round_num,
-    // //     cur_node.clone().value(),
-    // //     node_elem.terminal,
-    // //     should_run.value()
-    // // );
     let should_run_inv = should_run.not();
 
     let cur_is_null = cur_node.is_eq(tree_null_val)?;
@@ -570,13 +546,8 @@ pub fn node_circuit<F: ArkPrimeField>(
         .is_eq(&memory.stack_states[csc.trans_stack_tag])?
         & &wires.prev_step_t_ops;
 
-    // print_wires(&wires);
-
     //If we're out of the atomic subtree turn off
     wires.atom_flag = atom_sp_eq_cur_sp.select(&Boolean::FALSE, &wires.atom_flag)?;
-    //atom_parent_gte_cur_parent.select(&Boolean::FALSE, &wires.atom_flag)?;
-    // wires.atom_parent_id =
-    //     atom_parent_gte_cur_parent.select(&FpVar::zero(), &wires.atom_parent_id)?;
     wires.atom_sp = atom_sp_eq_cur_sp.select(&FpVar::zero(), &wires.atom_sp)?;
 
     //Update atomic flag and sp
@@ -587,10 +558,6 @@ pub fn node_circuit<F: ArkPrimeField>(
     let rule_is_atom_af_off =
         cur_is_atom.select(&memory.stack_states[csc.trans_stack_tag], &wires.atom_sp)?;
 
-    // wires.atom_parent_id = wires
-    //     .atom_flag
-    //     .select(&wires.atom_parent_id, &rule_is_atom_af_off)?;
-
     wires.atom_sp = wires
         .atom_flag
         .select(&wires.atom_sp, &rule_is_atom_af_off)?;
@@ -598,28 +565,18 @@ pub fn node_circuit<F: ArkPrimeField>(
 
     // //Update np rule
     //If we're out of the np subtree turn off
-
-    // let np_parent_gt_cur_parent = parent
-    //     .is_cmp_unchecked(&wires.np_parent_id, Ordering::Greater, false)?
-    //     .not();
-
     let np_sp_eq_cur_sp = wires
         .np_sp
         .is_eq(&memory.stack_states[csc.trans_stack_tag])?
         & &wires.prev_step_t_ops;
 
     wires.np_rule = np_sp_eq_cur_sp.select(&FpVar::zero(), &wires.np_rule)?;
-    //np_parent_gt_cur_parent.select(&FpVar::zero(), &wires.np_rule)?;
-    // wires.np_parent_id = np_parent_gt_cur_parent.select(&FpVar::zero(), &wires.np_parent_id)?;
+
     wires.np_sp = np_sp_eq_cur_sp.select(&FpVar::zero(), &wires.np_sp)?;
 
     let cur_is_np = Boolean::new_witness(cs.clone(), || Ok(csc.np.contains(&symbol.value()?)))?;
 
     let np_on = wires.np_rule.is_neq(&FpVar::zero())?;
-
-    // let rule_is_np = cur_is_np.select(&parent, &wires.np_parent_id)?;
-
-    // wires.np_parent_id = np_on.select(&wires.np_parent_id, &rule_is_np)?;
 
     let rule_is_np_npf_off = cur_is_np.select(&symbol, &FpVar::zero())?;
 
@@ -681,27 +638,17 @@ pub fn node_circuit<F: ArkPrimeField>(
 
     let rule_end = sib_is_null.is_eq(&top_rule_pop_bool)?;
 
-    // println!(
-    //     "Pop eqal node {:?}, rule end: {:?}",
-    //     pop_equal_node.clone().value(),
-    //     rule_end.clone().value()
-    // );
-
     //Either rule popped == node and not zero (DOBULE CHECK SOME STUFF WITH WS)
     let not_root_stack_cond = pop_equal_node & (is_root.clone().not()) & &rule_end;
     let ws_stack_cond = is_ws & &wires.atom_flag.clone().not();
 
-    // println!("Not root stack condition: {:?}, rule stack is empty: {:?}, whitespace stack condition: {:?}", not_root_stack_cond.clone().value(), rule_stack_is_empty.clone().value(), ws_stack_cond.clone().value());
-
     let stack_condition = not_root_stack_cond | rule_stack_is_empty | ws_stack_cond;
 
-    //ERROR
     stack_condition.conditional_enforce_equal(&Boolean::TRUE, should_run)?;
 
     let pre_op_sp = memory.stack_states[csc.trans_stack_tag].clone();
 
     wires.prev_step_t_ops = Boolean::FALSE;
-    // print_wires(&wires);
 
     let terminal_res = is_terminal(
         csc,
@@ -761,8 +708,6 @@ pub fn node_circuit<F: ArkPrimeField>(
 
     wires.count = &wires.count + FpVar::one();
 
-    // print_wires(&wires);
-
     Ok(wires)
 }
 
@@ -775,7 +720,6 @@ pub fn multi_node_step<F: ArkPrimeField>(
 ) -> Result<CoralWires<F>, SynthesisError> {
     let is_empty = Boolean::new_witness(cs.clone(), || Ok(csc.empty))?;
     let mut next_wires = wires.clone();
-    //CoralWires::clean_copy(wires);
 
     let tree_size = FpVar::new_witness(cs.clone(), || Ok(csc.tree_size))?;
 
@@ -814,8 +758,6 @@ pub fn multi_node_step<F: ArkPrimeField>(
             &offsets,
             cs.clone(),
         )?;
-
-        // print_wires(&next_wires);
 
         prev_round_flag = switch_flag;
     }
@@ -958,11 +900,7 @@ mod tests {
         trace::{ConstraintLayer, TracingMode},
         ConstraintSystem,
     };
-    // use petgraph::dot::Config;
-    // use petgraph::dot::Dot;
     use std::fs;
-    // use std::fs::File;
-    // use std::io::Write;
     use tracing_subscriber::{layer::SubscriberExt, Registry};
 
     pub fn full_test_function_multi(pest_file: String, input: String) {
@@ -976,30 +914,6 @@ mod tests {
 
         // Convert the petgraph tree to a left-child right-sibling tree
         grammar_graph.parse_and_convert_lcrs();
-
-        //             // Define the output .dot file name
-        // let dot_file_name = "graph.dot";
-        // let mut file = File::create(dot_file_name).expect("Unable to create file");
-        // write!(
-        //     file,
-        //     "{:?}",
-        //     Dot::with_config(&grammar_graph.graph, &[Config::EdgeNoLabel])
-        // )
-        // .expect("Unable to write data to file");
-
-        // // Write the LCRS tree to a DOT file for visualization
-        // let lcrs_dot_file_name = "lcrs_graph.dot";
-        // let mut lcrs_dot_file = File::create(lcrs_dot_file_name).expect("Unable to create file");
-        // write!(
-        //     lcrs_dot_file,
-        //     "{:?}",
-        //     Dot::with_config(&grammar_graph.lcrs_tree, &[Config::EdgeNoLabel])
-        // )
-        // .expect("Unable to write data to file");
-
-        // for (rule, _) in grammar_graph.rules.clone() {
-        //     println!("{:?} - {:?}", rule.clone(), coral_hash(rule));
-        // }
 
         println!("Tree Size {:?}", grammar_graph.lcrs_tree.node_count());
 
@@ -1024,8 +938,7 @@ mod tests {
             // .with(fmt::layer()) // Optional: Log formatted output to stdout
             .with(constraint_layer);
 
-        tracing::subscriber::set_global_default(subscriber)
-            .expect("Failed to set global default subscriber");
+        let _ = tracing::subscriber::set_global_default(subscriber);
 
         for i in 0..n_rounds {
             println!("===========================");
@@ -1077,8 +990,6 @@ mod tests {
             println!("n constraints: {:}", cs.num_constraints());
             println!("n witnesses: {:}", cs.num_witness_variables());
         }
-
-        // assert_eq!(p_i.doc_commit, irw.running_hash);
     }
 
     #[test]

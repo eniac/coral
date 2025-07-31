@@ -15,9 +15,6 @@ use std::fs;
 
 #[cfg(feature = "metrics")]
 use metrics::metrics::{log, log::Component};
-// use petgraph::dot::{Config, Dot};
-// use std::fs::File;
-// use std::io::Write;
 fn main() -> Result<()> {
     let opt = Options::parse();
 
@@ -129,52 +126,3 @@ fn main() -> Result<()> {
     }
     Ok(())
 }
-
-// #[cfg(test)]
-// mod tests {
-//     use coral::verifier;
-//     use coral::{
-//         prover::{self, *},
-//         util::*,
-//         verifier::*,
-//     };
-//     use nova_snark::nova::CompressedSNARK;
-
-//     #[test]
-//     pub fn test_e2e() {
-//         let (grammar_graph, doc) = read_graph(
-//             "./grammars/test_any.pest".to_string(),
-//             "./tests/test_docs/test_any.txt".to_string(),
-//         );
-
-//         let batch_size = 2;
-
-//         let (ark_ck, ark_vk) = gen_ark_pp(doc.len());
-
-//         let mut p_i = run_doc_committer(doc, &ark_ck);
-
-//         let (mut base, mut empty, pp) =
-//             prover::setup(&grammar_graph, &mut p_i, batch_size).unwrap();
-
-//         let mut v_i = verifier::setup(
-//             &mut empty,
-//             p_i.doc_commit,
-//             ark_vk,
-//             p_i.ic_cmt.clone().unwrap(),
-//         );
-
-//         // produce the prover and verifier keys for compressed snark
-//         let (pk, vk) = CompressedSNARK::<_, _, _, S1, S2>::setup(&pp).unwrap();
-
-//         p_i.snark_pk = Some(pk);
-//         v_i.snark_vk = Some(vk);
-
-//         let prover_output = run_prover::<AF>(&grammar_graph, &mut base, &mut p_i, &pp);
-
-//         assert!(prover_output.is_ok());
-
-//         let verifier_output = verify(&mut prover_output.unwrap(), v_i);
-
-//         assert!(verifier_output.is_ok());
-//     }
-// }

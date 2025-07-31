@@ -78,7 +78,7 @@ pub fn verify(
     v_i.mem.verifier_checks(&zn, &ci, false);
 
     //Have to get stack ptrs out
-    let sp_offset = 11; //not sure this is right
+    let sp_offset = 11;
     let sp_0 = zn[sp_offset];
     let sp_1 = zn[sp_offset + 1];
 
