@@ -1,0 +1,3 @@
+root = {SOI ~ r2 ~ EOI}
+r2 = {"a"~"b"}
+r1 = {"a"}

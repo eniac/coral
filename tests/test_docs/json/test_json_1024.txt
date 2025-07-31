@@ -1,0 +1,44 @@
+{
+    "_id": "67fd663eb6fdceefc71fb288",
+    "index": 0,
+    "guid": "6f5b9110-6448-466e-9001-32f30b7dd898",
+    "isActive": true,
+    "balance": "$2,263.77",
+    "picture": "http://placehold.it/32x32",
+    "age": 38,
+    "eyeColor": "green",
+    "name": "Salas Barrett",
+    "gender": "male",
+    "company": "MAXEMIA",
+    "email": "salasbarrett@maxemia.com",
+    "phone": "+1 (894) 506-3181",
+    "address": "904 Belvidere Street NE, Zarephath, New York, 2476",
+    "registered": "2023-07-07T07:40:23 +04:00",
+    "latitude": 3.115721,
+    "longitude": -128.223949,
+    "tags": [
+      "dolor",
+      "mollit",
+      "ullamco",
+      "ex",
+      "exercitation",
+      "magna",
+      "duis"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Sexton Justice"
+      },
+      {
+        "id": 1,
+        "name": "Melendez Dudley"
+      },
+      {
+        "id": 2,
+        "name": "Hancock Witt"
+      }
+    ],
+    "greeting": "Hello, Salas Barrett! You have 9 unread messages.",
+    "favoriteFruit": "banana"
+  }

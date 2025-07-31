@@ -1,0 +1,10 @@
+[package]
+name = "validate_c"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lang-c = {path="../../lang-c"}
+c-core = { path = "../../core" }
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std"] }
+

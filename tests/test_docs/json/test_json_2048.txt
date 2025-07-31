@@ -1,0 +1,76 @@
+{
+    "_id": "67fd668bbde065325891078e",
+    "index": 0,
+    "guid": "c25db744-d162-43d0-a852-f88bd2c1eff1",
+    "isActive": false,
+    "balance": "$2,234.97",
+    "picture": "http://placehold.it/32x32",
+    "age": 33,
+    "eyeColor": "green",
+    "name": "Byers Powell",
+    "gender": "male",
+    "company": "TERRAGO",
+    "email": "byerspowell@terrago.com",
+    "phone": "+1 (820) 407-3616",
+    "address": "170 Stillwell Avenue, Remington, Hawaii, 4564",
+    "about": "Deserunt magna in qui dolor enim quis nisi sunt consequat esse commodo Lorem aliquip eu. Sint consectetur dolore reprehenderit duis duis magna quis eiusmod. Sit in sint pariatur aute magna consectetur Lorem. Incididunt enim veniam cillum laborum in officia commodo aliquip in ipsum enim labore sit. sint pariatur aute magna consectetur Lorem. Incididunt enim veniam cillum laborum in officia commodo aliquip in ipsum enim labore sit. Qui elit veniam incididunt id labore ea proident voluptate sit fugiat fugiat sit.\r\n",
+    "registered": "2021-12-31T06:20:06 +05:00",
+    "latitude": -0.423099,
+    "longitude": 177.867503,
+    "tags": [
+      "voluptate",
+      "in",
+      "velit",
+      "et",
+      "culpa",
+      "amet",
+      "esse",
+      "nostrud",
+      "eiusmod",
+      "dolore"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Kaye Leon"
+      },
+      {
+        "id": 1,
+        "name": "Vivian Stein"
+      },
+      {
+        "id": 2,
+        "name": "Lynn Flynn"
+      },
+      {
+        "id": 3,
+        "name": "Petra Ashley"
+      },
+      {
+        "id": 4,
+        "name": "Shelby Ochoa"
+      },
+      {
+        "id": 5,
+        "name": "Sylvia Mcconnell"
+      },
+      {
+        "id": 6,
+        "name": "Buchanan Jenkins"
+      },
+      {
+        "id": 7,
+        "name": "Isabel Lopez"
+      },
+      {
+        "id": 8,
+        "name": "Ferrell Douglas"
+      },
+      {
+        "id": 9,
+        "name": "Barker Beard"
+      }
+    ],
+    "greeting": "Hello, Byers Powell! You have 1 unread message.",
+    "favoriteFruit": "banana"
+  }

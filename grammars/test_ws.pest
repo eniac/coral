@@ -1,0 +1,5 @@
+root = {SOI ~ r1 ~ r4~ EOI}
+r1 = {r2 | "b"}
+r2 = {"a"}
+r4 = {"a"|"b"|"c"}
+WHITESPACE = { " " | "\t" | "\r" | "\n" }

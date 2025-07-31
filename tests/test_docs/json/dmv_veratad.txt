@@ -1,0 +1,28 @@
+{
+      "user": "USERNAME",
+      "pass": "PASSWORD",
+      "service": "AgeMatch5.0.DMV",
+      "reference": "12345 {A UNIQUE ID}",
+      "target":{
+        "document":{
+            "fn":"Barbara",
+            "mn":"Anne",
+            "ln": "Miller",
+            "suffix": "JR",
+            "addr": "123 Main St APT 6",
+            "city": "Stratford",
+            "state": "CT",
+            "zip": "06614",
+            "dob": "19740821",
+            "height": "502",
+            "weight": "120",
+            "eye_color": "blue",
+            "gender": "f",
+            "number": "D0415 73071 06822",
+            "expiration": "20220412",
+            "issue": "20170412",
+            "category": "1"
+          },
+          "age": "21+"
+        }
+  }

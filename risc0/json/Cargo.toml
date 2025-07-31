@@ -1,0 +1,15 @@
+[package]
+name = "json-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+json-core = { path = "core" }
+json-methods = { path = "methods" }
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std", "prove", "client","metal"] }
+dashmap = { version = "5.4", optional = true }
+metrics = {path="../../metrics"}
+csv = "1.2"
+
+[features]
+metrics = ["dep:dashmap"]

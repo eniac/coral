@@ -1,0 +1,10 @@
+{
+    "bool": true,
+    "data": 47,
+    "obj": {
+        "str": "hello",
+        "array": [
+            "text"
+        ]
+    }
+}

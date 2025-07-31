@@ -1,0 +1,122 @@
+// Whitespace and Comments
+WHITESPACE = { " " | "\t" | "\r" | "\n" }
+COMMENT    = { "/*" ~ (!"*/" ~ ANY)* ~ "*/" | "//" ~ (!"\n" ~ ANY)* ~ "\n" }
+
+// Literals
+integer = @{ ASCII_DIGIT+ }
+float   = @{ ASCII_DIGIT+ ~ "." ~ ASCII_DIGIT* | "." ~ ASCII_DIGIT+ }
+string  = @{ "\"" ~ (ESC | !"\"" ~ ANY)* ~ "\"" }
+char    = @{ "'" ~ (ESC | !"'" ~ ANY) ~ "'" }
+ESC     = { "\\" ~ ("\"" | "\\" | "n" | "t" | "r" | "0") }
+
+// Identifiers
+identifier = @{ "*"? ~ (ASCII_ALPHA | "_") ~ (ASCII_ALPHANUMERIC | "_")* }
+
+// Keywords
+kw_void    = { "void" }
+kw_int     = { "int" }
+kw_float   = { "float" }
+kw_char    = { "char" }
+kw_if      = { "if" }
+kw_else    = { "else" }
+kw_while   = { "while" }
+kw_return  = { "return" }
+kw_struct  = { "struct" }
+kw_for     = { "for" }
+
+// Types
+type = { (kw_void | kw_int | kw_float | kw_char | (kw_struct ~ identifier))~"*"? }
+
+// Operators
+assign_op = { "=" | "+=" | "-=" | "*=" | "/=" }
+add_op    = { "+" | "-" }
+mul_op    = { "*" | "/" | "%" }
+rel_op    = { "==" | "!=" | "<" | "<=" | ">" | ">=" }
+logic_op  = { "&&" | "||" }
+unary_op  = { "!" | "-" | "&" | "*" | "++" | "--" }
+
+// Expressions
+argument_list = { expr ~ ("," ~ expr)* }
+
+primary_expr = {
+    float |
+    integer |
+    string |
+    char |
+    identifier |
+    "(" ~ expr ~ ")"
+}
+
+postfix_expr = { primary_expr ~ (
+    ("[" ~ expr ~ "]") |                  // Array access, e.g., ndigit[i]
+    ("." ~ identifier) |
+    ("->" ~ identifier) |
+    ("(" ~ argument_list? ~ ")") |
+    "++" |
+    "--"
+)* }
+
+unary_expr = { unary_op* ~ postfix_expr } // This can parse ndigit[i] as postfix_expr, or *ptr, etc.
+
+multiplicative_expr = { unary_expr ~ (mul_op ~ unary_expr)* }
+additive_expr       = { multiplicative_expr ~ (add_op ~ multiplicative_expr)* }
+relational_expr     = { additive_expr ~ (rel_op ~ additive_expr)* }
+logical_and_expr    = { relational_expr ~ ("&&" ~ relational_expr)* }
+logical_or_expr     = { logical_and_expr ~ ("||" ~ logical_and_expr)* }
+
+// --- MODIFIED: LHS of assignment is now unary_expr ---
+assignment_expr = { unary_expr ~ assign_op ~ expr }
+
+expr            = { assignment_expr | logical_or_expr }
+
+
+// Statements
+simple_declaration = { type ~ declarator_item ~ ("," ~ declarator_item)* }
+
+for_statement = {
+    kw_for ~ "(" ~
+    (simple_declaration | expr)? ~ ";" ~
+    expr? ~ ";" ~
+    expr? ~
+    ")" ~ statement
+}
+
+null_statement = { ";" }
+
+statement = {
+    expr_statement |
+    declaration_statement |
+    if_statement |
+    while_statement |
+    for_statement |
+    return_statement |
+    block_statement |
+    null_statement
+}
+
+expr_statement = { expr ~ ";" }
+
+simple_variable_declarator = { identifier ~ ("=" ~ expr)? }
+array_variable_declarator  = { identifier ~ "[" ~ integer ~ "]" } // e.g., ndigit[10]
+declarator_item            = { array_variable_declarator | simple_variable_declarator }
+
+// Handles 'int c, i, nwhite, nother;' and 'int ndigit[10];'
+declaration_statement = { type ~ declarator_item ~ ("," ~ declarator_item)* ~ ";" }
+
+if_statement = { kw_if ~ "(" ~ expr ~ ")" ~ statement ~ (kw_else ~ statement)? }
+while_statement = { kw_while ~ "(" ~ expr ~ ")" ~ statement }
+return_statement = { kw_return ~ expr? ~ ";" }
+block_statement = { "{" ~ statement* ~ "}" }
+
+// Function Definition
+param = { type ~ "*"?~identifier }
+param_list = { param ~ ("," ~ param)* }
+function_definition = { type ~ identifier ~ "(" ~ ("void" | param_list?) ~ ")" ~ block_statement }
+
+// Struct Definition (basic)
+struct_member_declaration = { type ~ identifier ~ ("[" ~ integer ~ "]")? ~ ";" }
+struct_definition = { kw_struct ~ identifier ~ "{" ~ struct_member_declaration* ~ "}" ~ ";" }
+
+// Top-level items in a C file
+program_item = { function_definition | declaration_statement | struct_definition }
+root        = { SOI ~ program_item* ~ EOI }

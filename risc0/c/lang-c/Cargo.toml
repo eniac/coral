@@ -1,0 +1,15 @@
+[package]
+name = "lang-c"
+version = "0.15.1"
+authors = ["Vickenty Fesunov <kent@setattr.net>"]
+license = "MIT/Apache-2.0"
+description = "Lightweight C parser"
+include = [ "/src/**/*.rs", "Cargo.toml", "/LICENSE*", "/README.md" ]
+documentation = "https://docs.rs/lang-c"
+homepage = "https://github.com/vickenty/lang-c"
+repository = "https://github.com/vickenty/lang-c"
+keywords = [ "ast", "c", "parser", "c-language" ]
+categories = [ "parser-implementations" ]
+
+[features]
+dev-pegviz = [] # tests only: emit extra output for pegviz

@@ -1,0 +1,15 @@
+[package]
+name = "toml-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+toml-core = { path = "core" }
+toml-methods = { path = "methods" }
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std", "prove", "client"] }
+metrics = {path="../../metrics"}
+dashmap = { version = "5.4", optional = true }
+csv = "1.2"
+
+[features]
+metrics = ["dep:dashmap"]

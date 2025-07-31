@@ -1,0 +1,13 @@
+{
+  "accountCategory": "DEPOSIT_ACCOUNT",
+  "accountId": "someLongTermUniqueIDString",
+  "accountNumberDisplay": "4321",
+  "productName": "Premier Account",
+  "status": "OPEN",
+  "currency": {
+    "currencyCode": "CAD"
+  },
+  "accountType": "SAVINGS",
+  "currentBalance": 1399.02,
+  "availableBalance": 1399.02
+}

@@ -1,0 +1,12 @@
+[package]
+name = "validate_toml"
+version = "0.12.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+toml = "0.8.22"
+toml-core = { path = "../../core" }
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std"] }
+

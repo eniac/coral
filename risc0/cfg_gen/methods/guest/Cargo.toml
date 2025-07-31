@@ -1,0 +1,15 @@
+[package]
+name = "validate_input"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std"] }
+pest = "2.7"
+pest_derive = "2.7"
+pest_meta = "2.7"
+pest_vm = "2.7"
+cfg-core = { path = "../../core" }
+serde = { version = "1.0", default-features = false, features = ["derive"] } 

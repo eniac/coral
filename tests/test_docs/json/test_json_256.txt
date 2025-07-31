@@ -1,0 +1,12 @@
+{
+    "boolean_field": true,
+    "critical_data": 47,
+    "obj_field": {
+        "string_subfield": "hello world 12dd342",
+        "array_subfield": [
+            "moreggggggggdg",
+            "exampleabcddedd",
+            "textffffffdf"
+        ]
+    }
+}

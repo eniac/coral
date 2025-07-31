@@ -1,0 +1,12 @@
+{
+    "_id": "67f02605eab5feb54eacf287",
+    "index": 0,
+    "guid": "53e15298-9ec8-4ac4-bea2-904447552382",
+    "isActive": false,
+    "balance": "$2,788.77",
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "phone": "+1 (819) 401-3948",
+    "address": "122 Foster Avenue, Darbydale, Hawaii, 993",
+    "about": "Deserunt fugiat pariatur incididunt aliquip ut. Commodo excepteur ullamco ullamco fugiat voluptate ipsum qui aliquip eu eu ad eiusmod. Ea nisi eu sint anim eiusmod nostrud amet. Sut"
+ }

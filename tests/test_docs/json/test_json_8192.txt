@@ -1,0 +1,450 @@
+{
+    "_id": "67fd6757ac28587f385de29e",
+    "index": 0,
+    "guid": "902d0b02-c92f-4f6f-81ad-aaedc4a5337d",
+    "isActive": false,
+    "balance": "$2,808.30",
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "blue",
+    "name": "Justice Stevens",
+    "gender": "male",
+    "company": "ZIGGLES",
+    "email": "justicestevens@ziggles.com",
+    "phone": "+1 (828) 577-2962",
+    "address": "967 Lawrence Street, Sanders, Michigan, 7523",
+    "about": "Ast ex id laboris. Ullamco occaecat dolore velit tempor magna nulla pariatur officia ea aaanbababamet. Et non amet voluptate ad est irure dolore minim sint ametssssss commodo ullamco tempor reprehenderit anim amet consequat deserunt. Excepteur sunt minim incididunt veniam Lorem anim aute laboris est.\r\n",
+    "registered": "2023-12-28T07:00:01 +05:00",
+    "latitude": 0.268993,
+    "longitude": 155.476995,
+    "tags": [
+      "labore",
+      "reprehenderit",
+      "exercitation",
+      "excepteur",
+      "ad",
+      "officia",
+      "tempor",
+      "occaecat",
+      "sunt",
+      "anim",
+      "deserunt",
+      "deserunt",
+      "occaecat",
+      "quis",
+      "qui",
+      "magna",
+      "exercitation",
+      "exercitation",
+      "eu",
+      "ullamco"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Fisher Harmon"
+      },
+      {
+        "id": 36,
+        "name": "Bright Blackburn"
+      },
+      {
+        "id": 37,
+        "name": "Susanne Holt"
+      },
+      {
+        "id": 38,
+        "name": "Michael Frye"
+      },
+      {
+        "id": 39,
+        "name": "Janice Copeland"
+      },
+      {
+        "id": 48,
+        "name": "Keri Melendez"
+      },
+      {
+        "id": 49,
+        "name": "Kathie Bridges"
+      },
+      {
+        "id": 50,
+        "name": "Lopez Watkins"
+      },
+      {
+        "id": 51,
+        "name": "Liza Campos"
+      },
+      {
+        "id": 52,
+        "name": "Mitzi Vaughn"
+      },
+      {
+        "id": 53,
+        "name": "Lawanda Sanchez"
+      },
+      {
+        "id": 54,
+        "name": "Sandoval Hurley"
+      },
+      {
+        "id": 55,
+        "name": "Suzette Aguilar"
+      },
+      {
+        "id": 56,
+        "name": "Mariana Hartman"
+      },
+      {
+        "id": 57,
+        "name": "Romero Massey"
+      },
+      {
+        "id": 58,
+        "name": "Dorsey Dickerson"
+      },
+      {
+        "id": 59,
+        "name": "Jaime Rivera"
+      },
+      {
+        "id": 60,
+        "name": "Horne Hull"
+      },
+      {
+        "id": 61,
+        "name": "Steele Fitzgerald"
+      },
+      {
+        "id": 62,
+        "name": "Kristy Branch"
+      },
+      {
+        "id": 63,
+        "name": "Norton Roach"
+      },
+      {
+        "id": 64,
+        "name": "Hays Carlson"
+      },
+      {
+        "id": 65,
+        "name": "Grant Robinson"
+      },
+      {
+        "id": 66,
+        "name": "Hamilton Joseph"
+      },
+      {
+        "id": 67,
+        "name": "Bertie English"
+      },
+      {
+        "id": 68,
+        "name": "Deirdre Humphrey"
+      },
+      {
+        "id": 69,
+        "name": "Ofelia Barr"
+      },
+      {
+        "id": 70,
+        "name": "Flora Leonard"
+      },
+      {
+        "id": 71,
+        "name": "Benita Bonner"
+      },
+      {
+        "id": 72,
+        "name": "Tanya Mcpherson"
+      },
+      {
+        "id": 73,
+        "name": "Louisa Pratt"
+      },
+      {
+        "id": 74,
+        "name": "Hart Faulkner"
+      },
+      {
+        "id": 75,
+        "name": "Jodie Sharpe"
+      },
+      {
+        "id": 76,
+        "name": "Jones Walls"
+      },
+      {
+        "id": 77,
+        "name": "Colleen White"
+      },
+      {
+        "id": 78,
+        "name": "Pat Harris"
+      },
+      {
+        "id": 79,
+        "name": "Horton Love"
+      },
+      {
+        "id": 87,
+        "name": "Roxie Golden"
+      },
+      {
+        "id": 88,
+        "name": "Huffman Haynes"
+      },
+      {
+        "id": 89,
+        "name": "Mack Sharp"
+      },
+      {
+        "id": 90,
+        "name": "Franco Meyer"
+      },
+      {
+        "id": 91,
+        "name": "Carlson Moses"
+      },
+      {
+        "id": 92,
+        "name": "Madeleine Joyner"
+      },
+      {
+        "id": 93,
+        "name": "Rhoda Norris"
+      },
+      {
+        "id": 94,
+        "name": "Ballard Owens"
+      },
+      {
+        "id": 95,
+        "name": "Barnett Byers"
+      },
+      {
+        "id": 96,
+        "name": "Earlene Bowen"
+      },
+      {
+        "id": 97,
+        "name": "Guerrero Hansen"
+      },
+      {
+        "id": 98,
+        "name": "Casey Matthews"
+      },
+      {
+        "id": 99,
+        "name": "Brady Mccray"
+      },
+      {
+        "id": 100,
+        "name": "Kendra Valdez"
+      },
+      {
+        "id": 101,
+        "name": "Morales Dominguez"
+      },
+      {
+        "id": 102,
+        "name": "Sloan Lamb"
+      },
+      {
+        "id": 103,
+        "name": "Felecia Tillman"
+      },
+      {
+        "id": 104,
+        "name": "Matilda Norman"
+      },
+      {
+        "id": 105,
+        "name": "Crane Caldwell"
+      },
+      {
+        "id": 106,
+        "name": "Maricela Day"
+      },
+      {
+        "id": 107,
+        "name": "Naomi Pacheco"
+      },
+      {
+        "id": 108,
+        "name": "Ronda Cortez"
+      },
+      {
+        "id": 109,
+        "name": "Greene Cohen"
+      },
+      {
+        "id": 110,
+        "name": "Estella Wade"
+      },
+      {
+        "id": 111,
+        "name": "Cindy Ferrell"
+      },
+      {
+        "id": 112,
+        "name": "Scott Henderson"
+      },
+      {
+        "id": 113,
+        "name": "John Woodward"
+      },
+      {
+        "id": 114,
+        "name": "Giles Mcbride"
+      },
+      {
+        "id": 120,
+        "name": "Rena Benton"
+      },
+      {
+        "id": 121,
+        "name": "Ana Hale"
+      },
+      {
+        "id": 122,
+        "name": "Lawson Hess"
+      },
+      {
+        "id": 123,
+        "name": "Diaz Byrd"
+      },
+      {
+        "id": 124,
+        "name": "Lane Yang"
+      },
+      {
+        "id": 125,
+        "name": "Shawna Hughes"
+      },
+      {
+        "id": 126,
+        "name": "Aurelia Berry"
+      },
+      {
+        "id": 127,
+        "name": "Maxine Leach"
+      },
+      {
+        "id": 128,
+        "name": "Gwendolyn Carter"
+      },
+      {
+        "id": 129,
+        "name": "Eula Chase"
+      },
+      {
+        "id": 130,
+        "name": "Frankie Burton"
+      },
+      {
+        "id": 131,
+        "name": "Dejesus Patterson"
+      },
+      {
+        "id": 132,
+        "name": "Stella Phillips"
+      },
+      {
+        "id": 133,
+        "name": "Caitlin Floyd"
+      },
+      {
+        "id": 134,
+        "name": "Corina Raymond"
+      },
+      {
+        "id": 135,
+        "name": "Gill Battle"
+      },
+      {
+        "id": 136,
+        "name": "Lavonne Macias"
+      },
+      {
+        "id": 137,
+        "name": "Allen Arnold"
+      },
+      {
+        "id": 138,
+        "name": "Constance Moore"
+      },
+      {
+        "id": 139,
+        "name": "Hood Compton"
+      },
+      {
+        "id": 140,
+        "name": "Roach Ellison"
+      },
+      {
+        "id": 141,
+        "name": "Wendi Hayes"
+      },
+      {
+        "id": 142,
+        "name": "Copeland Perez"
+      },
+      {
+        "id": 143,
+        "name": "Chang Navarro"
+      },
+      {
+        "id": 144,
+        "name": "Rosemary Briggs"
+      },
+      {
+        "id": 145,
+        "name": "Yvonne Donovan"
+      },
+      {
+        "id": 146,
+        "name": "Lilia Miller"
+      },
+      {
+        "id": 147,
+        "name": "Iva Downs"
+      },
+      {
+        "id": 148,
+        "name": "Black Rodriguez"
+      },
+      {
+        "id": 149,
+        "name": "Willie Reese"
+      },
+      {
+        "id": 150,
+        "name": "Randi Fleming"
+      },
+      {
+        "id": 151,
+        "name": "Myra Rojas"
+      },
+      {
+        "id": 152,
+        "name": "Selena Booker"
+      },
+      {
+        "id": 153,
+        "name": "Lowery Frost"
+      },
+      {
+        "id": 197,
+        "name": "Russo Greer"
+      },
+      {
+        "id": 199,
+        "name": "Florence Brennan"
+      }
+    ],
+    "greeting": "Hello, Justice Stevens! You have 701 unread messages.",
+    "favoriteFruit": "strawberry"
+  }

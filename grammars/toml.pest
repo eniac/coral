@@ -1,0 +1,200 @@
+root = { SOI ~ expression ~ (newline ~ expression)* ~ EOI }
+
+expression = {
+    (ws ~ keyval ~ ws ~ comment?) |
+    (ws ~ table ~ ws ~ comment?) |
+    (ws ~ comment?) // This should be last as it's the most general
+}
+
+
+// Whitespace
+ws = { wschar* }
+wschar = { " " | "\t" } // %x20 or %x09
+
+// Newline
+newline = { "\n" | "\r\n" } // %x0A or %x0D.0A
+
+// Comment
+comment_start_symbol = { "#" } // %x23
+non_eol = { !(newline)~ANY } // %x09 / %x20-7F / non-ascii
+comment = { comment_start_symbol ~ non_eol* }
+
+// Key-Value pairs
+keyval = { key ~ keyval_sep ~ val }
+keyval_sep = { ws ~ "=" ~ ws } // %x3D
+
+key = { dotted_key | simple_key}
+simple_key = { quoted_key | unquoted_key }
+
+unquoted_key_char = { ASCII_ALPHANUMERIC | "-" | "_" }
+unquoted_key = { unquoted_key_char+ } // 1*( ALPHA / DIGIT / %x2D / %x5F )
+quoted_key = { basic_string | literal_string }
+dotted_key = { simple_key ~ (dot_sep ~ simple_key)+ } // 1*( dot-sep simple-key )
+
+dot_sep = { ws ~ "." ~ ws } // %x2E
+
+val = { string | boolean | array | inline_table | date_time | float | integer }
+
+// String
+string = { ml_basic_string | basic_string | ml_literal_string | literal_string }
+
+// Basic String
+basic_string = { quotation_mark ~ basic_char* ~ quotation_mark }
+quotation_mark = { "\"" } // %x22
+
+basic_char = { basic_unescaped | escaped }
+basic_unescaped = { !("\u{0022}")~ANY}
+escaped = { escape ~ escape_seq_char }
+
+escape = { "\\" } // %x5C
+escape_seq_char = {
+    "\"" |       // %x22 "    quotation mark  U+0022
+    "\\" |       // %x5C \    reverse solidus U+005C
+    "b" |        // %x62 b    backspace       U+0008
+    "f" |        // %x66 f    form feed       U+000C
+    "n" |        // %x6E n    line feed       U+000A
+    "r" |        // %x72 r    carriage return U+000D
+    "t" |        // %x74 t    tab             U+0009
+    ("u" ~ ASCII_HEX_DIGIT{4}) |          // %x75 uXXXX U+XXXX
+    ("U" ~ ASCII_HEX_DIGIT{8})            // %x55 UXXXXXXXX U+XXXXXXXX
+}
+
+// Multiline Basic String
+ml_basic_string_delim = { quotation_mark{3} }
+ml_basic_string = { ml_basic_string_delim ~ newline? ~ ml_basic_body ~ ml_basic_string_delim }
+ml_basic_body = { mlb_content* ~ (mlb_quotes ~ mlb_content+ )* ~ mlb_quotes? }
+
+mlb_content = { mlb_char | newline | mlb_escaped_nl }
+mlb_char = { mlb_unescaped | escaped }
+mlb_quotes = { quotation_mark{1,2} } // 1*2quotation-mark
+mlb_unescaped = { !("\u{0022}")~ANY}
+mlb_escaped_nl = { escape ~ ws ~ newline ~ (wschar | newline)* }
+
+// Literal String
+literal_string = { apostrophe ~ literal_char* ~ apostrophe }
+apostrophe = { "'" } // %x27
+literal_char = {  !("\u{0027}")~ANY} // %x09 / %x20-26 / %x28-7E / non-ascii
+
+// Multiline Literal String
+ml_literal_string_delim = { apostrophe{3} }
+ml_literal_string = { ml_literal_string_delim ~ newline? ~ ml_literal_body ~ ml_literal_string_delim }
+ml_literal_body = { mll_content* ~ (mll_quotes ~ mll_content+)* ~ mll_quotes? }
+
+mll_content = { mll_char | newline }
+mll_char = {  !("\u{0027}")~ANY} // %x09 / %x20-26 / %x28-7E / non-ascii
+mll_quotes = { apostrophe{1,2} } // 1*2apostrophe
+
+// Integer
+integer = { dec_int | hex_int | oct_int | bin_int }
+
+minus = { "-" } // %x2D
+plus = { "+" }  // %x2B
+underscore = { "_" } // %x5F
+digit1_9 = { '1'..'9' } // %x31-39
+digit0_7 = { '0'..'7' } // %x30-37
+digit0_1 = { '0'..'1' } // %x30-31
+
+hex_prefix = { "0x" } // %x30.78
+oct_prefix = { "0o" } // %x30.6F
+bin_prefix = { "0b" } // %x30.62
+
+dec_int = { (minus | plus)? ~ unsigned_dec_int }
+unsigned_dec_int_group = { ASCII_DIGIT | (underscore ~ ASCII_DIGIT) }
+unsigned_dec_int = { ASCII_DIGIT | (digit1_9 ~ unsigned_dec_int_group+) }
+
+
+hex_int_group = { ASCII_HEX_DIGIT | (underscore ~ ASCII_HEX_DIGIT) }
+hex_int = { hex_prefix ~ ASCII_HEX_DIGIT ~ hex_int_group* } // ABNF: hex-prefix HEXDIG *( HEXDIG / underscore HEXDIG )
+
+oct_int_group = { digit0_7 | (underscore ~ digit0_7) }
+oct_int = { oct_prefix ~ digit0_7 ~ oct_int_group* } // ABNF: oct-prefix digit0-7 *( digit0-7 / underscore digit0-7 )
+
+bin_int_group = { digit0_1 | (underscore ~ digit0_1) }
+bin_int = { bin_prefix ~ digit0_1 ~ bin_int_group* } // ABNF: bin-prefix digit0-1 *( digit0-1 / underscore digit0-1 )
+
+
+// Float
+float_int_part = { dec_int }
+decimal_point = { "." } // %x2E
+zero_prefixable_int_group = { ASCII_DIGIT | (underscore ~ ASCII_DIGIT) }
+zero_prefixable_int = { ASCII_DIGIT ~ zero_prefixable_int_group* } // DIGIT *( DIGIT / underscore DIGIT )
+frac = { decimal_point ~ zero_prefixable_int }
+exp = { "e" ~ float_exp_part }
+float_exp_part = { (minus | plus)? ~ zero_prefixable_int }
+
+float_val_normal = { float_int_part ~ (exp | (frac ~ exp?)) }
+special_float_val = { (minus | plus)? ~ (inf | nan) }
+inf = { "inf" } // %x69.6e.66
+nan = { "nan" } // %x6e.61.6e
+float = { float_val_normal | special_float_val }
+
+// Boolean
+// Pest rule names cannot be `true` or `false`.
+true_ = { "true" }   // %x74.72.75.65
+false_ = { "false" } // %x66.61.6C.73.65
+boolean = { true_ | false_ }
+
+// Date and Time (as defined in RFC 3339)
+date_time = { offset_date_time | local_date_time | local_date | local_time }
+
+date_fullyear = { ASCII_DIGIT{4} }
+date_month    = { ASCII_DIGIT{2} }  // 01-12
+date_mday     = { ASCII_DIGIT{2} }  // 01-28, 01-29, 01-30, 01-31 based on month/year
+time_delim    = { "T" | " " }
+time_hour     = { ASCII_DIGIT{2} }  // 00-23
+time_minute   = { ASCII_DIGIT{2} }  // 00-59
+time_second   = { ASCII_DIGIT{2} }  // 00-58, 00-59, 00-60 based on leap second rules
+time_secfrac  = { "." ~ ASCII_DIGIT+ }
+time_numoffset = { (plus | minus) ~ time_hour ~ ":" ~ time_minute }
+time_offset   = { "Z" | time_numoffset } // "Z" is case-sensitive in RFC3339 and TOML
+
+partial_time  = { time_hour ~ ":" ~ time_minute ~ ":" ~ time_second ~ time_secfrac? }
+full_date     = { date_fullyear ~ "-" ~ date_month ~ "-" ~ date_mday }
+full_time     = { partial_time ~ time_offset }
+
+// Offset Date-Time
+offset_date_time = { full_date ~ time_delim ~ full_time }
+
+// Local Date-Time
+local_date_time = { full_date ~ time_delim ~ partial_time }
+
+// Local Date
+local_date = { full_date }
+
+// Local Time
+local_time = { partial_time }
+
+// Array
+array_open =  { "[" } // %x5B
+array_close = { "]" } // %x5D
+array_sep = { "," }   // %x2C
+
+ws_comment_newline_item = { wschar | (comment? ~ newline) }
+ws_comment_newline = { ws_comment_newline_item* }
+
+array_value_wrapper = { ws_comment_newline ~ val ~ ws_comment_newline }
+array_values = { array_value_wrapper ~ (array_sep ~ array_value_wrapper)* ~ array_sep? }
+
+array = { array_open ~ array_values? ~ ws_comment_newline ~ array_close }
+
+// Table
+table = { std_table | array_table }
+
+// Standard Table
+std_table_open  = { "[" ~ ws }    // %x5B ws
+std_table_close = { ws ~ "]" }    // ws %x5D
+std_table = { std_table_open ~ key ~ std_table_close }
+
+// Inline Table
+inline_table_open  = { "{" ~ ws }    // %x7B ws
+inline_table_close = { ws ~ "}" }    // ws %x7D
+inline_table_sep   = { ws ~ "," ~ ws } // ws %x2C ws
+
+inline_table_keyvals = { keyval ~ (inline_table_sep ~ keyval)* }
+
+inline_table = { inline_table_open ~ inline_table_keyvals? ~ inline_table_close }
+
+// Array Table
+array_table_open  = { "[[" ~ ws }  // %x5B.5B ws
+array_table_close = { ws ~ "]]" }  // ws %x5D.5D
+array_table = { array_table_open ~ key ~ array_table_close }

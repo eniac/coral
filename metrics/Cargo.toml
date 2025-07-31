@@ -1,0 +1,15 @@
+[package]
+name = "metrics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+csv = "1.2"
+dashmap = { version = "6.1"}
+
+[features]
+default = []
+
+[lib]
+name = "metrics"
+path = "./lib.rs"  

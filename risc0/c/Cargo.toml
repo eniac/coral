@@ -1,0 +1,16 @@
+[package]
+name = "c-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+c-core = { path = "core" }
+c-methods = { path = "methods" }
+risc0-zkvm = { version = "2.0.0", default-features = false, features = ["std", "prove", "client","metal"] }
+dashmap = { version = "5.4", optional = true }
+metrics = {path="../../metrics"}
+lang-c = {path = "lang-c"}
+csv = "1.2"
+
+[features]
+metrics = ["dep:dashmap"]

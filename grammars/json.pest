@@ -1,0 +1,55 @@
+// The root rule for a JSON document, expecting a single object or array
+root = { SOI ~ (object | array) ~ EOI }
+
+WHITESPACE = { " " | "\t" | "\r" | "\n" }
+
+colon = { ":" }
+
+comma = { "," }
+
+open_brace = { "{" }
+close_brace = { "}" }
+open_bracket = { "[" }
+close_bracket = { "]" }
+
+quote = { "\"" }
+// Object structure: can be empty or contain pairs separated by commas
+object = {
+    open_brace ~ close_brace |
+    open_brace ~ pair ~ (comma ~ pair)* ~ close_brace
+}
+
+
+// A pair in an object, consisting of a string key and a value
+pair = { string ~ colon ~ value }
+
+// Array structure: can be empty or contain values separated by commas
+array = {
+    open_bracket ~ close_bracket |
+    open_bracket ~ value ~ (comma ~ value)* ~ close_bracket
+}
+
+// Value can be any JSON data type
+value = { object | array | string | number | boolean | null }
+
+// Boolean values
+boolean = { "true" | "false" }
+
+// Null value
+null = { "null" }
+
+// String value including escape sequences
+string = { quote ~ inner ~ quote }
+inner = { char* }
+char = {
+    !(quote | "\\") ~ ANY
+    | "\\" ~ ("\"" | "\\" | "/" | "b" | "f" | "n" | "r" | "t")
+    | "\\" ~ ("u" ~ ASCII_HEX_DIGIT{4})
+}
+
+// Number value, including integer, fractional, and exponent parts
+integer_part = { "-"?~ASCII_DIGIT ~ ASCII_DIGIT* }
+decimal_part = { "." ~ ASCII_DIGIT+ }
+exponential_part = { ("e" | "E") ~ ("+" | "-")? ~ ASCII_DIGIT+ }
+
+number = { integer_part ~ decimal_part? ~ exponential_part? }

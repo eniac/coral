@@ -1,0 +1,65 @@
+{
+  "accountGroupDetails": [
+    {
+      "accountGroup": "CREDITCARD",
+      "creditCardAccountsDetails": [
+        {
+          "productName": "Citi® Double Cash Card",
+          "displayAccountNumber": "XXXXXXXXXXXX1116",
+          "accountDescription": "Citi® Double Cash Card-1116",
+          "balanceType": "ASSET",
+          "accountId": "dec6fb583c723e1a5051582737fa6f094b5894853602734caa571ba21405e669a134c23079239e061944c6f3a03c36b989930ae099a92a04da69f4a6cb8db41f",
+          "currencyCode": "USD",
+          "accountStatus": "ACTIVE",
+          "currentBalance": 7359.11,
+          "availableCredit": 4884.19,
+          "creditLimit": 8000,
+          "purchasesAPR": 16.99,
+          "minimumDueAmount": 205.69,
+          "paymentDueDate": "2019-08-03",
+          "lastStatementBalance": 750,
+          "lastStatementDate": "2019-05-31",
+          "advancesAPR": 12.99,
+          "cashAdvanceLimit": 800,
+          "cashAdvanceAvailableAmount": 800,
+          "lastPaymentAmount": 100,
+          "lastPaymentDate": "2019-07-12"
+        }
+      ],
+      "totalCurrentBalance": {
+        "localCurrencyCode": "USD",
+        "localCurrencyBalanceAmount": 7359.11
+      }
+    },
+    {
+      "accountGroup": "CHECKING",
+      "checkingAccountsDetails": [
+        {
+          "productName": "Citi Platinum Checking account",
+          "accountNickname": "mychecking user2",
+          "displayAccountNumber": "XXXXXX8549",
+          "accountDescription": "Citi Platinum Checking Account-8549",
+          "balanceType": "ASSET",
+          "accountId": "0291b95b438034fe54ec66e8a56636ec2f778adf1d710e620305269788e0da9610f9429e6d53be2ff5126a8a519f36a311904e7b7bad287121515f7daa789egg",
+          "currencyCode": "USD",
+          "accountStatus": "ACTIVE",
+          "currentBalance": 5142,
+          "availableBalance": 4335,
+          "interestRate": 0.04,
+          "totalInterestAmount": 12.12
+        }
+      ],
+      "totalCurrentBalance": {
+        "localCurrencyCode": "USD",
+        "localCurrencyBalanceAmount": 5142
+      },
+      "totalAvailableBalance": {
+        "localCurrencyCode": "USD",
+        "localCurrencyBalanceAmount": 4335
+      }
+    }
+  ],
+  "customer": {
+    "customerId": "b377fcc8fe9eff366e1c1f974f9224bcf22be03548088de24c4897d02a28de3ccb891594526a4e182f83fa94908ea8075f7e08f8cc23a3deda166e14096534c9"
+  }
+}
