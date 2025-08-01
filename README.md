@@ -6,15 +6,6 @@ The details of Coral are described in our paper: [Coral: Fast Succinct Non-Inter
 
 ## Compile
 
-You will need to use the nightly version of rust 
-
-```
-rustup toolchain install nightly
-rustup default nightly
-```
-
-You can then compile with 
-
 ```
 cargo build --release
 ```
