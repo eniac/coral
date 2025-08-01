@@ -55,7 +55,7 @@ pub struct CoralDocCommitment<'b> {
     pub doc_ck: Powers<'b, Bn254>,
 }
 
-pub fn run_doc_committer<'a>(doc: Vec<char>, ck: &Powers<'a, Bn254>) -> CoralDocCommitment<'a> {
+pub fn run_doc_committer<'a>(doc: &Vec<char>, ck: &Powers<'a, Bn254>) -> CoralDocCommitment<'a> {
     #[cfg(feature = "metrics")]
     log::tic(Component::Generator, "doc_commit");
 

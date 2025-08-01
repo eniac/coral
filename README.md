@@ -32,7 +32,7 @@ cargo build --release --features para
 
 ## Usage
 ```
-Usage: reef [OPTIONS] <--commit|--prove|--verify|--e2e>
+Usage: coral [OPTIONS] <--commit|--prove|--verify|--e2e>
 
 Options:
       --commit

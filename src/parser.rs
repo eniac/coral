@@ -296,7 +296,7 @@ impl GrammarGraph {
     ) -> String {
         let mut special_rule_name = String::new();
 
-        if let Expr::Seq(box Expr::NegPred(_), _) = expr {
+        if let Expr::Seq(a, _) = expr && let Expr::NegPred(_) = &**a {
             special_rule_name = format!("special{}", negpred_count);
             *negpred_count += 1;
             special_rules.push(pest_meta::ast::Rule {
@@ -659,11 +659,11 @@ impl GrammarGraph {
                     .or_insert_with(|| Ident(terminal.clone()));
                 Ident(rule_name)
             }
-            Seq(box lhs, box rhs) => Seq(
+            Seq(lhs, rhs) => Seq(
                 Box::new(Self::transform_expr(lhs, new_rules)),
                 Box::new(Self::transform_expr(rhs, new_rules)),
             ),
-            Choice(box lhs, box rhs) => Choice(
+            Choice(lhs, rhs) => Choice(
                 Box::new(Self::transform_expr(lhs, new_rules)),
                 Box::new(Self::transform_expr(rhs, new_rules)),
             ),
@@ -682,7 +682,7 @@ impl GrammarGraph {
                 }
                 Ident(range_rule_name)
             }
-            Opt(box inner_expr) => {
+            Opt(inner_expr) => {
                 let transformed_inner = Self::transform_expr(inner_expr, new_rules);
                 let opt_rule_name = Self::generate_unique_id(&transformed_inner);
                 if !new_rules.contains_key(&opt_rule_name) {
@@ -695,7 +695,7 @@ impl GrammarGraph {
                 Ident(opt_rule_name)
             }
             // Handle the Rep operator for zero or more repetitions
-            Rep(box inner_expr) => {
+            Rep(inner_expr) => {
                 let rep_rule_name = format!("Rep_{}", Self::generate_unique_id(inner_expr));
 
                 if !new_rules.contains_key(&rep_rule_name) {
@@ -711,7 +711,7 @@ impl GrammarGraph {
                 Ident(rep_rule_name)
             }
             // Handle the RepOnce operator for one or more repetitions
-            RepOnce(box inner_expr) => {
+            RepOnce(inner_expr) => {
                 let rep_once_rule_name =
                     format!("RepOnce_{}", Self::generate_unique_id(inner_expr));
 
@@ -772,21 +772,21 @@ impl GrammarGraph {
             //format!("Str_{}", s),
             NegPred(s) => format!("NegPred_{}", Self::generate_unique_id(s)),
             Ident(s) => format!("Ident_{}", s),
-            Seq(box left, box right) => format!(
+            Seq(left, right) => format!(
                 "Seq_{}_{}",
                 Self::generate_unique_id(left),
                 Self::generate_unique_id(right)
             ),
-            Choice(box left, box right) => {
+            Choice(left, right) => {
                 format!(
                     "Choice_{}_{}",
                     Self::generate_unique_id(left),
                     Self::generate_unique_id(right)
                 )
             }
-            Opt(box inner) => format!("Opt_{}", Self::generate_unique_id(inner)),
-            Rep(box inner) => format!("Rep_{}", Self::generate_unique_id(inner)),
-            RepOnce(box inner) => format!("RepOnce_{}", Self::generate_unique_id(inner)),
+            Opt(inner) => format!("Opt_{}", Self::generate_unique_id(inner)),
+            Rep(inner) => format!("Rep_{}", Self::generate_unique_id(inner)),
+            RepOnce(inner) => format!("RepOnce_{}", Self::generate_unique_id(inner)),
             Range(start, end) => format!("Range_{}_{}", start, end),
             // Add cases for other expression types as necessary
             _ => "Unsupported_Expr_Type".to_string(),

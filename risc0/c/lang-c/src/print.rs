@@ -1,5 +1,4 @@
 #![allow(unknown_lints)]
-#![allow(bare_trait_objects)]
 
 //! Debug printer for abstract syntax tree
 //!
@@ -22,12 +21,12 @@ use visit::*;
 /// Each line contains name of the AST node type, followed by the enum variant
 /// (when it does not match name of contained node), and primitive fields.
 pub struct Printer<'a> {
-    w: &'a mut fmt::Write,
+    w: &'a mut dyn fmt::Write,
     offset: usize,
 }
 
 impl<'a> Printer<'a> {
-    pub fn new(w: &mut fmt::Write) -> Printer {
+    pub fn new(w: &mut dyn fmt::Write) -> Printer {
         Printer { w: w, offset: 0 }
     }
 
@@ -636,9 +635,9 @@ impl<'a> fmt::Display for Escape<'a> {
 
         for c in self.0.chars() {
             match c {
-                '"' | '\'' | '\\' => try!(write!(fmt, "\\{}", c)),
-                ' '...'~' => try!(fmt.write_char(c)),
-                _ => try!(write!(fmt, "\\u{{{:04x}}}", c as u32)),
+                '"' | '\'' | '\\' => write!(fmt, "\\{}", c)?,
+                ' '...'~' => fmt.write_char(c)?,
+                _ => write!(fmt, "\\u{{{:04x}}}", c as u32)?,
             }
         }
 

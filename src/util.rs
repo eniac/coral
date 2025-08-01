@@ -21,7 +21,9 @@ use std::{fs, usize};
 #[cfg(feature = "metrics")]
 use metrics::metrics::{log, log::Component};
 
-pub trait ArkPrimeField = PrimeField<BigInt = BigInteger256>;
+pub trait ArkPrimeField: PrimeField<BigInt = BigInteger256> {}
+
+impl<F: PrimeField<BigInt = BigInteger256>> ArkPrimeField for F {}
 
 pub type AF = ark_bn254::Fr;
 pub type PolyBn254 = DensePolynomial<AF>;

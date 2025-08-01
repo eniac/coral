@@ -1,9 +1,10 @@
 #![allow(missing_docs, non_snake_case)]
-#![feature(box_patterns)]
+
 mod parser;
 use anyhow::Result;
 use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use clap::Parser;
+use coral::parser::GrammarGraph;
 use coral::verifier::{self, VerifierDocCommit};
 use coral::{
     config::*,
@@ -22,18 +23,29 @@ fn main() -> Result<()> {
     let input_text_path = opt.doc;
     let batch_size = opt.batch_size;
 
-    let (grammar_graph, doc) = read_graph(grammar_path.clone(), input_text_path.clone());
+    let mut opt_grammar_graph: Option<GrammarGraph> = None;
+    let mut opt_doc: Option<Vec<char>> = None;
+
+    if opt.commit || opt.prove || opt.e2e {
+        assert!(input_text_path.is_some(), "Input text file must be provided for commit or prove");
+
+        let (grammar_graph, doc) = read_graph(grammar_path.clone(), input_text_path.as_ref().unwrap().clone());
+
+        opt_grammar_graph = Some(grammar_graph);
+        opt_doc = Some(doc);
+    }
 
     if opt.e2e || opt.commit {
         #[cfg(feature = "metrics")]
         log::tic(Component::Generator, "doc_commit_params");
 
-        let (ark_ck, ark_vk) = gen_ark_pp(doc.len());
+
+        let (ark_ck, ark_vk) = gen_ark_pp(opt_doc.as_ref().unwrap().len());
 
         #[cfg(feature = "metrics")]
         log::stop(Component::Generator, "doc_commit_params");
 
-        let doc_commit = run_doc_committer(doc.clone(), &ark_ck);
+        let doc_commit = run_doc_committer(opt_doc.as_ref().unwrap(), &ark_ck);
 
         let mut prover_compressed_bytes = Vec::new();
         doc_commit
@@ -70,15 +82,15 @@ fn main() -> Result<()> {
 
         #[allow(unused_mut)]
         let (mut p_i, mut base, mut empty, pp) =
-            prover::setup(&grammar_graph, batch_size, prover_doc_commit.blind).unwrap();
+            prover::setup(opt_grammar_graph.as_ref().unwrap(), batch_size, prover_doc_commit.blind).unwrap();
 
         #[cfg(feature = "para")]
         let prover_output_res =
-            run_para_prover::<AF>(&grammar_graph, base, &mut p_i, prover_doc_commit, &pp);
+            run_para_prover::<AF>(opt_grammar_graph.as_ref().unwrap(), base, &mut p_i, prover_doc_commit, &pp);
 
         #[cfg(not(feature = "para"))]
         let prover_output_res =
-            run_prover::<AF>(&grammar_graph, &mut base, &mut p_i, prover_doc_commit, &pp);
+            run_prover::<AF>(opt_grammar_graph.as_ref().unwrap(), &mut base, &mut p_i, prover_doc_commit, &pp);
 
         assert!(prover_output_res.is_ok());
 
@@ -112,17 +124,19 @@ fn main() -> Result<()> {
     }
 
     #[cfg(feature = "metrics")]
-    {
-        metrics_file(
-            opt.metrics.clone(),
-            &grammar_path,
-            &input_text_path,
-            doc.len(),
-            grammar_graph.lcrs_tree.node_count(),
-            opt.batch_size,
-            grammar_graph.rule_count,
-        );
-        log::write_csv(&opt.metrics.clone().unwrap().as_path().display().to_string()).unwrap();
+    {   
+        if opt_grammar_graph.is_some() && input_text_path.is_some() {
+            metrics_file(
+                opt.metrics.clone(),
+                &grammar_path,
+                &input_text_path.unwrap(),
+                opt_doc.unwrap().len(),
+                opt_grammar_graph.as_ref().unwrap().lcrs_tree.node_count(),
+                opt.batch_size,
+                opt_grammar_graph.as_ref().unwrap().rule_count,
+            );
+            log::write_csv(&opt.metrics.clone().unwrap().as_path().display().to_string()).unwrap();
+        }
     }
     Ok(())
 }
