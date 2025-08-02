@@ -24,7 +24,7 @@ pub struct VerifierInfo<ArkF: arkPrimeField> {
     pub perm_chal: Vec<ArkF>,
 }
 
-#[derive(CanonicalSerialize, CanonicalDeserialize)]
+#[derive(CanonicalSerialize, CanonicalDeserialize, Debug)]
 pub struct VerifierDocCommit {
     pub doc_commit: kzg10::Commitment<Bn254>,
     pub doc_commit_vk: kzg10::VerifierKey<Bn254>,
@@ -93,16 +93,17 @@ pub fn verify(
 
     //Have to get calimed eval out of zn
     //Check doc commitment
-    let eval_offset = sp_offset + 2 + 1;
+    let eval_offset = sp_offset + 2;
     let claimed_eval = zn[eval_offset];
-    assert!(ArkKZG::check(
+    let kzg_check = ArkKZG::check(
         &v_dc.doc_commit_vk,
         &v_dc.doc_commit,
         v_i.perm_chal[0],
         segmented_circuit_memory::bellpepper::nova_to_ark_field(&claimed_eval),
-        p_o.doc_commit_proof.as_ref().unwrap()
-    )
-    .is_ok());
+        p_o.doc_commit_proof.as_ref().unwrap()).unwrap();
+    assert!(kzg_check);
+
+    println!("Verified Successfully!");
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "doc_commit_check");

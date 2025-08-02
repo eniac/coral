@@ -234,7 +234,8 @@ pub fn extend_commit<F: ArkPrimeField>(
 
     let same_eval = !terminal | &is_epsilon;
 
-    let next_root = memory.perm_chal[0].clone() - ((val * shift) + &wires.doc_ctr);
+    let root = (val * shift) + &wires.doc_ctr; //To account for SOI 
+    let next_root = &chal[0] - root;
     let eval = &wires.running_eval * next_root;
 
     same_eval.select(&cond_running_eval, &eval)
@@ -363,7 +364,9 @@ pub fn is_terminal<F: ArkPrimeField>(
     new_wires.running_eval = running_eval;
     new_wires.parent_id = sib_not_null.select(&new_wires.parent_id, &trans_stack_pop_values[1])?;
     new_wires.cur_node_id = sib_not_null.select(sib, &trans_stack_pop_values[0])?;
-    new_wires.doc_ctr += F::ONE;
+    let is_epsilon = cur_symbol.is_eq(&FpVar::constant(csc.epsilon_val))?;
+    new_wires.doc_ctr = is_epsilon.select(&new_wires.doc_ctr, &(&new_wires.doc_ctr + F::ONE))?;
+
 
     new_wires.np_rule = FpVar::zero();
 

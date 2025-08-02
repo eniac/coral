@@ -353,9 +353,10 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
             #[cfg(feature = "metrics")]
             log::tic(Component::Prover, "doc_commit_proof");
             let doc_proof =
-                ArkKZG::open(&doc_ck, &doc_commit_poly, perm_chal[0], &commit_rand).unwrap();
+                ArkKZG::open(&doc_ck, &doc_commit_poly, perm_chal[0], &commit_rand); 
+            assert!(doc_proof.is_ok());
             doc_proof_sender
-                .send(doc_proof)
+                .send(doc_proof.unwrap())
                 .expect("Failed to send doc proof");
             #[cfg(feature = "metrics")]
             log::stop(Component::Prover, "doc_commit_proof");
@@ -487,13 +488,13 @@ pub fn run_prover<ArkF: ArkPrimeField>(
         &doc_commit.doc_commit_poly,
         base.mem.as_mut().unwrap().perm_chal[0],
         &doc_commit.commit_rand,
-    )
-    .unwrap();
+    ); 
+    assert!(proof_ark_kzg.is_ok());
 
     Ok(ProverOutput {
         compressed_snark: compressed_snark.unwrap(),
         z_0: z0_primary,
-        doc_commit_proof: Some(proof_ark_kzg),
+        doc_commit_proof: Some(proof_ark_kzg.unwrap()),
         empty: None,
     })
 }
