@@ -39,7 +39,7 @@ Options:
   -h, --help                Print help
   -V, --version             Print version
 ```
-Coral has the ability to process multiple nodes in the parse tree per folding, this is controlled by the `--batch-size` parameter. A larger batch size will require fewer total proving steps, but each step will have more constraints. In our experience, between 5 and 10 total steps is usually optimal. However, performace significantly degrades with batch sizes over 2,500.
+Coral has the ability to process multiple nodes in the parse tree per folding, this is controlled by the `--batch-size` parameter. A larger batch size will require fewer total proving steps, but each step will have more constraints. In our experience, between 5 and 10 total steps is usually optimal. Depending on you tree this will be a batch size between 150 and 1,000. Performace will significantly degrade as the batch size increases beyond 2,500.
 
 You can use `--cmt-name` and `--proof-name` to choose names for your
 commitment and proof files. This is optional - Coral will choose a name for the
