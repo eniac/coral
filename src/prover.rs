@@ -129,10 +129,10 @@ pub fn setup<ArkF: ArkPrimeField>(
 
     let p_i = ProverInfo {
         ic_key_length: base.key_length,
-        ic_blinds: ic_blinds,
+        ic_blinds,
         ic_hints: ram_hints,
         snark_pk: pk,
-        random_layer: random_layer,
+        random_layer,
     };
 
     Ok((p_i, base, empty, pp))
@@ -250,7 +250,7 @@ pub fn run_prove(
             &mut circuit_primary,
             Some(p_i.ic_blinds[i].clone()),
             p_i.ic_hints[i].clone(),
-            vec![p_i.ic_key_length.clone()],
+            vec![p_i.ic_key_length],
         );
         assert!(res.is_ok());
 
@@ -325,7 +325,7 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
         &z0_primary,
         Some(p_i.ic_blinds[0].clone()),
         p_i.ic_hints[0].clone(),
-        vec![p_i.ic_key_length.clone()],
+        vec![p_i.ic_key_length],
     )
     .unwrap();
 
@@ -429,7 +429,7 @@ pub fn run_prover<ArkF: ArkPrimeField>(
         &z0_primary,
         Some(p_i.ic_blinds[0].clone()),
         p_i.ic_hints[0].clone(),
-        vec![p_i.ic_key_length.clone()],
+        vec![p_i.ic_key_length],
     )
     .unwrap();
 
@@ -448,7 +448,7 @@ pub fn run_prover<ArkF: ArkPrimeField>(
             &mut circuit_primary,
             Some(p_i.ic_blinds[i].clone()),
             p_i.ic_hints[i].clone(),
-            vec![p_i.ic_key_length.clone()],
+            vec![p_i.ic_key_length],
         );
         assert!(res.is_ok());
 

@@ -66,7 +66,7 @@ pub fn coral_hash<F: ArkPrimeField>(obj: &str) -> F {
         out = F::from_le_bytes_mod_order(&hash);
     }
     assert!(out > F::ZERO);
-    if obj == "" {
+    if obj.is_empty() {
         out = F::zero();
     }
     out
@@ -218,6 +218,12 @@ pub struct InterRoundWires<F: ArkPrimeField> {
     pub doc_ctr: F,
 }
 
+impl<F: ArkPrimeField> Default for InterRoundWires<F> {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl<F: ArkPrimeField> InterRoundWires<F> {
     pub fn new() -> Self {
         InterRoundWires {
@@ -347,7 +353,7 @@ pub fn converted_np_map<F: ArkPrimeField>(
     for (rule, poly) in g.np.iter() {
         let mut vec: Vec<F> = vec![coral_hash(rule)];
         for val in &poly.0 {
-            vec.push(coral_hash(&val));
+            vec.push(coral_hash(val));
         }
         for _ in 0..vals_size - vec.len() {
             vec.push(np_filler);
@@ -425,7 +431,8 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         let np_size = max(g.max_np_rule_size + 1, 1);
 
-        let base = Self {
+        
+        Self {
             empty: false,
             //Blind for KZG
             blind: doc_blind,
@@ -441,7 +448,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             atom: g.atom.iter().map(|x| coral_hash(x)).collect(),
             np: g.np_rule_names.iter().map(|x| coral_hash(x)).collect(),
             n_np: g.np.len(),
-            np_size: np_size,
+            np_size,
             shift_powers,
             //Private Tree Info
             tree_null_val: tree_size,
@@ -471,8 +478,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             node_wits: Vec::new(),
             parent_node_wits: Vec::new(),
             round_num: 0,
-        };
-        base
+        }
     }
 
     #[allow(non_snake_case)]
@@ -785,7 +791,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             sib: self.tree_null_val,
         };
 
-        let padding_needed = if g.lcrs_tree.node_count() % self.batch_size == 0 {
+        let padding_needed = if g.lcrs_tree.node_count().is_multiple_of(self.batch_size) {
             0
         } else {
             self.batch_size - (g.lcrs_tree.node_count() % self.batch_size)

@@ -624,7 +624,9 @@ impl GrammarGraph {
         expr: &pest_meta::ast::Expr,
         new_rules: &mut HashMap<String, pest_meta::ast::Expr>,
     ) -> pest_meta::ast::Expr {
-        let transformed_expr = match expr {
+        
+
+        match expr {
             Str(terminal) => {
                 if terminal.len() > 1 {
                     let lhs = terminal[0..1].to_string();
@@ -735,9 +737,7 @@ impl GrammarGraph {
             }
             // Other expression types...
             _ => expr.clone(),
-        };
-
-        transformed_expr
+        }
     }
 
     // Function to match with pest built in terminal rules
@@ -881,8 +881,8 @@ impl GrammarGraph {
             let parent_id = self.lcrs_tree[node_index].parent_id;
             if parent_id != Some(usize::MAX) {
                 // Ensure the node is not the root node
-                if let Some(parent_id) = parent_id {
-                    if let Some(parent_index) = self
+                if let Some(parent_id) = parent_id
+                    && let Some(parent_index) = self
                         .lcrs_tree
                         .node_indices()
                         .find(|&i| self.lcrs_tree[i].id == parent_id)
@@ -913,16 +913,14 @@ impl GrammarGraph {
                                             }
                                         })
                                         .next();
-                                    if let Some(next_index) = sibling_index {
-                                        if self.lcrs_tree[next_index].id != id {
+                                    if let Some(next_index) = sibling_index
+                                        && self.lcrs_tree[next_index].id != id {
                                             siblings.push(self.lcrs_tree[next_index].clone());
                                         }
-                                    }
                                 }
                             }
                         }
                     }
-                }
             }
         }
         siblings

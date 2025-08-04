@@ -2,7 +2,7 @@
 # Coral
 
 This is an implementation of Coral, a system for generating zero-knowledge proofs that a committed document matches is consistent with a public Context Free Grammar
-The details of Coral are described in our paper: [Coral: Fast Succinct Non-Interactive Zero-Knowledge CFG Proofs](https://eprint.iacr.org/2023/1886).
+The details of Coral are described in our paper: Coral: Fast Succinct Non-Interactive Zero-Knowledge CFG Proofs.
 
 ## Compile
 

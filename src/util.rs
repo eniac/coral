@@ -55,16 +55,14 @@ pub fn get_name(opt_1: Option<String>, cmt_or_prf: bool, p_or_v: bool) -> String
         } else {
             format!("v_{}", opt_1.unwrap())
         }
-    } else {
-        if cmt_or_prf {
-            if p_or_v {
-                return "prover_data.cmt".to_string();
-            } else {
-                return "verifier_data.cmt".to_string();
-            }
+    } else if cmt_or_prf {
+        if p_or_v {
+            "prover_data.cmt".to_string()
         } else {
-            return "to_verify.proof".to_string();
+            "verifier_data.cmt".to_string()
         }
+    } else {
+        "to_verify.proof".to_string()
     }
 }
 

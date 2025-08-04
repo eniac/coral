@@ -165,8 +165,7 @@ pub fn rule_push_wrapper<F: ArkPrimeField>(
     wires: &mut CoralWires<F>,
     memory: &mut RunningMemWires<F>,
 ) -> Result<(), SynthesisError> {
-    let _pushed =
-        csc.mem
+    csc.mem
             .as_mut()
             .unwrap()
             .conditional_push(condition, csc.rule_stack_tag, vals, memory)?;
@@ -181,7 +180,6 @@ pub fn trans_pop_wrapper<F: ArkPrimeField>(
     wires: &mut CoralWires<F>,
     memory: &mut RunningMemWires<F>,
 ) -> Result<Vec<FpVar<F>>, SynthesisError> {
-    // println!("Trans pop wrapper {:?}", condition.value());
     wires.prev_step_t_ops = condition.select(&Boolean::TRUE, &wires.prev_step_t_ops)?;
     let popped =
         csc.mem
@@ -202,8 +200,7 @@ pub fn trans_push_wrapper<F: ArkPrimeField>(
 ) -> Result<(), SynthesisError> {
     wires.prev_step_t_ops = condition.select(&Boolean::TRUE, &wires.prev_step_t_ops)?;
 
-    let _pushed =
-        csc.mem
+    csc.mem
             .as_mut()
             .unwrap()
             .conditional_push(condition, csc.trans_stack_tag, vals, memory)?;
@@ -791,7 +788,7 @@ pub fn ivcify<F: ArkPrimeField>(
     cs: ConstraintSystemRef<F>,
     csc: &mut CoralStepCircuit<F>,
 ) -> Result<(), SynthesisError> {
-    let _valid_scan = csc.mem.as_mut().unwrap().scan(memory, last_round)?;
+    csc.mem.as_mut().unwrap().scan(memory, last_round)?;
 
     let mut l_vals: Vec<FpVar<F>> = Vec::new();
     let mut r_vals: Vec<FpVar<F>> = Vec::new();
@@ -922,7 +919,7 @@ mod tests {
 
         let (ark_ck, _) = gen_ark_pp(input_text.len());
 
-        let doc_commit = run_doc_committer(input_text.chars().collect(), &ark_ck);
+        let doc_commit = run_doc_committer(&input_text.chars().collect(), &ark_ck);
 
         let (_, mut base, _, _) =
             setup::<AF>(&grammar_graph, nodes_per_step, doc_commit.blind).unwrap();
@@ -1053,7 +1050,7 @@ mod tests {
     fn full_test_multi_toml() {
         full_test_function_multi(
             "grammars/toml.pest".to_string(),
-            "./tests/test_docs/toml/small_toml.txt".to_string(),
+            "./tests/test_docs/toml/t1.txt".to_string(),
         );
     }
 }
