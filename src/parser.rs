@@ -5,9 +5,9 @@ use pest_meta::ast::RuleType;
 use pest_meta::optimizer;
 use pest_meta::parser::{self, Rule};
 use pest_vm::Vm;
+use petgraph::Direction;
 use petgraph::graph::{DiGraph, Graph, NodeIndex};
 use petgraph::visit::EdgeRef;
-use petgraph::Direction;
 use std::cmp::max;
 use std::collections::HashMap;
 use std::collections::HashSet;
@@ -296,7 +296,9 @@ impl GrammarGraph {
     ) -> String {
         let mut special_rule_name = String::new();
 
-        if let Expr::Seq(a, _) = expr && let Expr::NegPred(_) = &**a {
+        if let Expr::Seq(a, _) = expr
+            && let Expr::NegPred(_) = &**a
+        {
             special_rule_name = format!("special{}", negpred_count);
             *negpred_count += 1;
             special_rules.push(pest_meta::ast::Rule {

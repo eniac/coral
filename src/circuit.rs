@@ -1,11 +1,11 @@
-use crate::solver::{to_F, CoralStepCircuit, CoralWires};
+use crate::solver::{CoralStepCircuit, CoralWires, to_F};
 use crate::util::ArkPrimeField;
 use ark_r1cs_std::{
+    GR1CSVar,
     alloc::AllocVar,
     boolean::Boolean,
     eq::EqGadget,
-    fields::{fp::FpVar, FieldVar},
-    GR1CSVar,
+    fields::{FieldVar, fp::FpVar},
 };
 use ark_relations::gr1cs::{ConstraintSystemRef, SynthesisError};
 use core::ops::Not;
@@ -367,7 +367,6 @@ pub fn is_terminal<F: ArkPrimeField>(
     let is_epsilon = cur_symbol.is_eq(&FpVar::constant(csc.epsilon_val))?;
     new_wires.doc_ctr = is_epsilon.select(&new_wires.doc_ctr, &(&new_wires.doc_ctr + F::ONE))?;
 
-
     new_wires.np_rule = FpVar::zero();
 
     Ok(new_wires)
@@ -431,7 +430,6 @@ pub fn not_terminal<F: ArkPrimeField>(
 
     //np
     rule_lookup_vec.push(FpVar::from(cur_is_np & &is_not_root_check));
-
 
     //Switch point for rule push
     let switch_var = FpVar::new_witness(cs.clone(), || Ok(csc.switch_wits[round_num]))?;
@@ -507,7 +505,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     should_run: &Boolean<F>,
     tree_null_val: &FpVar<F>,
     shift: &FpVar<F>,
-    offsets: &[FpVar<F>], 
+    offsets: &[FpVar<F>],
     cs: ConstraintSystemRef<F>,
 ) -> Result<CoralWires<F>, SynthesisError> {
     let round_num = csc.round_num;
@@ -900,11 +898,11 @@ mod tests {
     use crate::{circuit::*, solver::InterRoundWires, util::*};
     use ark_bn254::Fr as F;
     use ark_relations::gr1cs::{
-        trace::{ConstraintLayer, TracingMode},
         ConstraintSystem,
+        trace::{ConstraintLayer, TracingMode},
     };
     use std::fs;
-    use tracing_subscriber::{layer::SubscriberExt, Registry};
+    use tracing_subscriber::{Registry, layer::SubscriberExt};
 
     pub fn full_test_function_multi(pest_file: String, input: String) {
         let grammar = fs::read_to_string(pest_file).expect("Failed to read grammar file");
@@ -983,8 +981,8 @@ mod tests {
             if !is_sat {
                 let trace = cs.which_is_unsatisfied().unwrap().unwrap();
                 println!(
-        "The constraint system was not satisfied; here is a trace indicating which constraint was unsatisfied: \n{trace}",
-    )
+                    "The constraint system was not satisfied; here is a trace indicating which constraint was unsatisfied: \n{trace}",
+                )
             }
 
             assert!(is_sat, "Not sat at iter {}", i);

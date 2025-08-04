@@ -27,9 +27,15 @@ fn main() -> Result<()> {
     let mut opt_doc: Option<Vec<char>> = None;
 
     if opt.commit || opt.prove || opt.e2e {
-        assert!(input_text_path.is_some(), "Input text file must be provided for commit or prove");
+        assert!(
+            input_text_path.is_some(),
+            "Input text file must be provided for commit or prove"
+        );
 
-        let (grammar_graph, doc) = read_graph(grammar_path.clone(), input_text_path.as_ref().unwrap().clone());
+        let (grammar_graph, doc) = read_graph(
+            grammar_path.clone(),
+            input_text_path.as_ref().unwrap().clone(),
+        );
 
         opt_grammar_graph = Some(grammar_graph);
         opt_doc = Some(doc);
@@ -38,7 +44,6 @@ fn main() -> Result<()> {
     if opt.e2e || opt.commit {
         #[cfg(feature = "metrics")]
         log::tic(Component::Generator, "doc_commit_params");
-
 
         let (ark_ck, ark_vk) = gen_ark_pp(opt_doc.as_ref().unwrap().len());
 
@@ -81,16 +86,30 @@ fn main() -> Result<()> {
             CoralDocCommitment::deserialize_compressed_unchecked(&*prover_cmt_data).unwrap();
 
         #[allow(unused_mut)]
-        let (mut p_i, mut base, mut empty, pp) =
-            prover::setup(opt_grammar_graph.as_ref().unwrap(), batch_size, prover_doc_commit.blind).unwrap();
+        let (mut p_i, mut base, mut empty, pp) = prover::setup(
+            opt_grammar_graph.as_ref().unwrap(),
+            batch_size,
+            prover_doc_commit.blind,
+        )
+        .unwrap();
 
         #[cfg(feature = "para")]
-        let prover_output_res =
-            run_para_prover::<AF>(opt_grammar_graph.as_ref().unwrap(), base, &mut p_i, prover_doc_commit, &pp);
+        let prover_output_res = run_para_prover::<AF>(
+            opt_grammar_graph.as_ref().unwrap(),
+            base,
+            &mut p_i,
+            prover_doc_commit,
+            &pp,
+        );
 
         #[cfg(not(feature = "para"))]
-        let prover_output_res =
-            run_prover::<AF>(opt_grammar_graph.as_ref().unwrap(), &mut base, &mut p_i, prover_doc_commit, &pp);
+        let prover_output_res = run_prover::<AF>(
+            opt_grammar_graph.as_ref().unwrap(),
+            &mut base,
+            &mut p_i,
+            prover_doc_commit,
+            &pp,
+        );
 
         assert!(prover_output_res.is_ok());
 
@@ -124,7 +143,7 @@ fn main() -> Result<()> {
     }
 
     #[cfg(feature = "metrics")]
-    {   
+    {
         if opt_grammar_graph.is_some() && input_text_path.is_some() {
             metrics_file(
                 opt.metrics.clone(),

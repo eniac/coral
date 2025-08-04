@@ -1,11 +1,11 @@
 use crate::util::{HashMap, HashSet};
 use crate::{parser::*, util::*};
-use ark_r1cs_std::{alloc::AllocVar, boolean::Boolean, fields::fp::FpVar, GR1CSVar};
+use ark_r1cs_std::{GR1CSVar, alloc::AllocVar, boolean::Boolean, fields::fp::FpVar};
 use ark_relations::gr1cs::ConstraintSystemRef;
 use ark_relations::gr1cs::SynthesisError;
 use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use ark_std::vec::Vec;
-use petgraph::{visit::EdgeRef, Direction};
+use petgraph::{Direction, visit::EdgeRef};
 use segmented_circuit_memory::memory::mem_type::MemType;
 use segmented_circuit_memory::memory::nebula::{MemBuilder, RunningMem};
 use sha2::{Digest, Sha256};

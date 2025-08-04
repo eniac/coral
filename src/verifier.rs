@@ -100,7 +100,9 @@ pub fn verify(
         &v_dc.doc_commit,
         v_i.perm_chal[0],
         segmented_circuit_memory::bellpepper::nova_to_ark_field(&claimed_eval),
-        p_o.doc_commit_proof.as_ref().unwrap()).unwrap();
+        p_o.doc_commit_proof.as_ref().unwrap(),
+    )
+    .unwrap();
     assert!(kzg_check);
 
     println!("Verified Successfully!");

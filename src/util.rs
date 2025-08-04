@@ -1,15 +1,15 @@
 use crate::{parser::GrammarGraph, prover::make_coral_circuit, solver::*};
 use ark_bn254::Bn254;
 use ark_ff::{BigInteger256, FftField, PrimeField};
-use ark_poly::univariate::DensePolynomial;
 use ark_poly::DenseUVPolynomial;
-use ark_poly_commit::kzg10::{self, Powers, UniversalParams, VerifierKey};
+use ark_poly::univariate::DensePolynomial;
 use ark_poly_commit::Error;
+use ark_poly_commit::kzg10::{self, Powers, UniversalParams, VerifierKey};
 use csv::Writer;
 use nova_snark::{
     nova::PublicParams,
     provider::{Bn256EngineKZG, GrumpkinEngine},
-    traits::{snark::default_ck_hint, Engine},
+    traits::{Engine, snark::default_ck_hint},
 };
 use rand::rngs::OsRng;
 use segmented_circuit_memory::bellpepper::FCircuit;
