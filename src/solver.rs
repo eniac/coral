@@ -460,9 +460,9 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             trans_stack_tag: 1,
             tree_ram_offset,
             tree_ram_tag: 2,
-            rule_ram_tag: 0,
+            rule_ram_tag: 3,
             rule_ram_offset,
-            np_ram_tag: 1,
+            np_ram_tag: 4,
             np_ram_offset,
             mem_ops: 3 * batch_size,
             stack_ops: (g.max_rule_size + 3) * batch_size,
@@ -535,8 +535,9 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
                 MemType::PrivROM(self.tree_ram_tag, 5),
                 MemType::PubROM(self.rule_ram_tag, self.rule_size + 2),
                 MemType::PubROM(self.np_ram_tag, self.np_size),
-            ],
-            vec![2, 2],
+                MemType::Stack(self.rule_stack_tag, 2),
+                MemType::Stack(self.trans_stack_tag, 2),
+            ]
         );
 
         let np_vector = make_np_vector(g);
@@ -634,6 +635,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
             if node.symbol != ws_f {
                 let pop_cond = node.id != 0;
+                println!("pop cond {:?}", pop_cond);
                 let top = mem_builder.cond_pop(pop_cond, self.rule_stack_tag);
                 if pop_cond {
                     rule_stack.pop();
@@ -841,8 +843,9 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
                 (self.tree_ram_tag, self.batch_size),
                 (self.np_ram_tag, self.batch_size),
                 (self.rule_ram_tag, self.batch_size),
+                (self.rule_stack_tag, (self.rule_size + 1) * self.batch_size),
+                (self.trans_stack_tag, 2 * self.batch_size),
             ],
-            vec![2 * self.batch_size, (self.rule_size + 1) * self.batch_size],
             false,
             "./ppot_0080_23.ptau",
         );

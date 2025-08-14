@@ -75,7 +75,7 @@ pub fn verify(
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "eq_checks");
 
-    v_i.mem.verifier_checks(&zn, &ci, false);
+    v_i.mem.verifier_checks(&zn, &ci);
 
     //Have to get stack ptrs out
     let sp_offset = 11;

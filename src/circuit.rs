@@ -541,7 +541,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     //Update atomic flag and sp
     let atom_sp_eq_cur_sp = wires
         .atom_sp
-        .is_eq(&memory.stack_states[csc.trans_stack_tag])?
+        .is_eq(&memory.stack_ptrs[csc.trans_stack_tag])?
         & &wires.prev_step_t_ops;
 
     //If we're out of the atomic subtree turn off
@@ -554,7 +554,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     let af_on = wires.atom_flag.clone();
 
     let rule_is_atom_af_off =
-        cur_is_atom.select(&memory.stack_states[csc.trans_stack_tag], &wires.atom_sp)?;
+        cur_is_atom.select(&memory.stack_ptrs[csc.trans_stack_tag], &wires.atom_sp)?;
 
     wires.atom_sp = wires
         .atom_flag
@@ -565,7 +565,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     //If we're out of the np subtree turn off
     let np_sp_eq_cur_sp = wires
         .np_sp
-        .is_eq(&memory.stack_states[csc.trans_stack_tag])?
+        .is_eq(&memory.stack_ptrs[csc.trans_stack_tag])?
         & &wires.prev_step_t_ops;
 
     wires.np_rule = np_sp_eq_cur_sp.select(&FpVar::zero(), &wires.np_rule)?;
@@ -579,7 +579,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     let rule_is_np_npf_off = cur_is_np.select(&symbol, &FpVar::zero())?;
 
     let rule_is_np_npf_off_sp =
-        cur_is_np.select(&memory.stack_states[csc.trans_stack_tag], &FpVar::zero())?;
+        cur_is_np.select(&memory.stack_ptrs[csc.trans_stack_tag], &FpVar::zero())?;
 
     let new_np_rule_sp = np_on.select(&wires.np_sp, &rule_is_np_npf_off_sp)?;
 
@@ -600,7 +600,7 @@ pub fn node_circuit<F: ArkPrimeField>(
     is_root.enforce_equal(&is_root_check)?;
 
     // Assert stack is empty at root
-    let rule_stack_is_empty = memory.stack_states[csc.rule_stack_tag].is_eq(&offsets[0])?;
+    let rule_stack_is_empty = memory.stack_ptrs[csc.rule_stack_tag].is_eq(&offsets[0])?;
 
     rule_stack_is_empty.conditional_enforce_equal(&Boolean::TRUE, &(&is_root & should_run))?;
 
@@ -644,7 +644,7 @@ pub fn node_circuit<F: ArkPrimeField>(
 
     stack_condition.conditional_enforce_equal(&Boolean::TRUE, should_run)?;
 
-    let pre_op_sp = memory.stack_states[csc.trans_stack_tag].clone();
+    let pre_op_sp = memory.stack_ptrs[csc.trans_stack_tag].clone();
 
     wires.prev_step_t_ops = Boolean::FALSE;
 
