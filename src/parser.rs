@@ -624,8 +624,6 @@ impl GrammarGraph {
         expr: &pest_meta::ast::Expr,
         new_rules: &mut HashMap<String, pest_meta::ast::Expr>,
     ) -> pest_meta::ast::Expr {
-        
-
         match expr {
             Str(terminal) => {
                 if terminal.len() > 1 {
@@ -886,41 +884,42 @@ impl GrammarGraph {
                         .lcrs_tree
                         .node_indices()
                         .find(|&i| self.lcrs_tree[i].id == parent_id)
+                {
+                    // Locate the parent node index
+                    for edge in self
+                        .lcrs_tree
+                        .edges_directed(parent_index, Direction::Outgoing)
                     {
-                        // Locate the parent node index
-                        for edge in self
-                            .lcrs_tree
-                            .edges_directed(parent_index, Direction::Outgoing)
-                        {
-                            if edge.weight() == &EdgeType::Child {
-                                let child_index = edge.target();
-                                if self.lcrs_tree[child_index].id != id {
-                                    // Exclude the current node
-                                    siblings.push(self.lcrs_tree[child_index].clone());
-                                }
-                                // After finding the first child, traverse siblings
-                                let mut sibling_index = Some(child_index);
+                        if edge.weight() == &EdgeType::Child {
+                            let child_index = edge.target();
+                            if self.lcrs_tree[child_index].id != id {
+                                // Exclude the current node
+                                siblings.push(self.lcrs_tree[child_index].clone());
+                            }
+                            // After finding the first child, traverse siblings
+                            let mut sibling_index = Some(child_index);
 
-                                while let Some(current_index) = sibling_index {
-                                    sibling_index = self
-                                        .lcrs_tree
-                                        .edges_directed(current_index, Direction::Outgoing)
-                                        .filter_map(|next_edge| {
-                                            if next_edge.weight() == &EdgeType::Sibling {
-                                                Some(next_edge.target())
-                                            } else {
-                                                None
-                                            }
-                                        })
-                                        .next();
-                                    if let Some(next_index) = sibling_index
-                                        && self.lcrs_tree[next_index].id != id {
-                                            siblings.push(self.lcrs_tree[next_index].clone());
+                            while let Some(current_index) = sibling_index {
+                                sibling_index = self
+                                    .lcrs_tree
+                                    .edges_directed(current_index, Direction::Outgoing)
+                                    .filter_map(|next_edge| {
+                                        if next_edge.weight() == &EdgeType::Sibling {
+                                            Some(next_edge.target())
+                                        } else {
+                                            None
                                         }
+                                    })
+                                    .next();
+                                if let Some(next_index) = sibling_index
+                                    && self.lcrs_tree[next_index].id != id
+                                {
+                                    siblings.push(self.lcrs_tree[next_index].clone());
                                 }
                             }
                         }
                     }
+                }
             }
         }
         siblings

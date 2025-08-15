@@ -431,7 +431,6 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         let np_size = max(g.max_np_rule_size + 1, 1);
 
-        
         Self {
             empty: false,
             //Blind for KZG
@@ -530,15 +529,13 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
     }
 
     pub fn init_set(&mut self, g: &GrammarGraph) -> (MemBuilder<F>, Vec<Vec<F>>, Vec<Vec<F>>) {
-        let mut mem_builder = MemBuilder::new(
-            vec![
-                MemType::PrivROM(self.tree_ram_tag, 5),
-                MemType::PubROM(self.rule_ram_tag, self.rule_size + 2),
-                MemType::PubROM(self.np_ram_tag, self.np_size),
-                MemType::Stack(self.rule_stack_tag, 2),
-                MemType::Stack(self.trans_stack_tag, 2),
-            ]
-        );
+        let mut mem_builder = MemBuilder::new(vec![
+            MemType::PrivROM(self.tree_ram_tag, 5),
+            MemType::PubROM(self.rule_ram_tag, self.rule_size + 2),
+            MemType::PubROM(self.np_ram_tag, self.np_size),
+            MemType::Stack(self.rule_stack_tag, 2),
+            MemType::Stack(self.trans_stack_tag, 2),
+        ]);
 
         let np_vector = make_np_vector(g);
 
@@ -838,13 +835,20 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         #[cfg(feature = "metrics")]
         log::tic(Component::Solver, "ic");
+        println!("rule size {:?} ", self.rule_size);
         let (blinds, ram_hints, ram_batch_size, rm) = mem_builder.new_running_mem(
             vec![
                 (self.tree_ram_tag, self.batch_size),
                 (self.np_ram_tag, self.batch_size),
                 (self.rule_ram_tag, self.batch_size),
-                (self.rule_stack_tag, (self.rule_size + 1) * self.batch_size),
-                (self.trans_stack_tag, 2 * self.batch_size),
+            ],
+            vec![
+                (
+                    self.rule_stack_tag,
+                    self.rule_size * self.batch_size,
+                    self.batch_size,
+                ),
+                (self.trans_stack_tag, self.batch_size, self.batch_size),
             ],
             false,
             "./ppot_0080_23.ptau",

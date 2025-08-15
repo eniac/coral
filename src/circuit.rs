@@ -166,9 +166,9 @@ pub fn rule_push_wrapper<F: ArkPrimeField>(
     memory: &mut RunningMemWires<F>,
 ) -> Result<(), SynthesisError> {
     csc.mem
-            .as_mut()
-            .unwrap()
-            .conditional_push(condition, csc.rule_stack_tag, vals, memory)?;
+        .as_mut()
+        .unwrap()
+        .conditional_push(condition, csc.rule_stack_tag, vals, memory)?;
 
     Ok(())
 }
@@ -201,9 +201,9 @@ pub fn trans_push_wrapper<F: ArkPrimeField>(
     wires.prev_step_t_ops = condition.select(&Boolean::TRUE, &wires.prev_step_t_ops)?;
 
     csc.mem
-            .as_mut()
-            .unwrap()
-            .conditional_push(condition, csc.trans_stack_tag, vals, memory)?;
+        .as_mut()
+        .unwrap()
+        .conditional_push(condition, csc.trans_stack_tag, vals, memory)?;
 
     Ok(())
 }
@@ -563,10 +563,8 @@ pub fn node_circuit<F: ArkPrimeField>(
 
     // //Update np rule
     //If we're out of the np subtree turn off
-    let np_sp_eq_cur_sp = wires
-        .np_sp
-        .is_eq(&memory.stack_ptrs[csc.trans_stack_tag])?
-        & &wires.prev_step_t_ops;
+    let np_sp_eq_cur_sp =
+        wires.np_sp.is_eq(&memory.stack_ptrs[csc.trans_stack_tag])? & &wires.prev_step_t_ops;
 
     wires.np_rule = np_sp_eq_cur_sp.select(&FpVar::zero(), &wires.np_rule)?;
 
