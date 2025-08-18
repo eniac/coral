@@ -632,7 +632,6 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
             if node.symbol != ws_f {
                 let pop_cond = node.id != 0;
-                println!("pop cond {:?}", pop_cond);
                 let top = mem_builder.cond_pop(pop_cond, self.rule_stack_tag);
                 if pop_cond {
                     rule_stack.pop();

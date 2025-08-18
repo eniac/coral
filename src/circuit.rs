@@ -724,8 +724,8 @@ pub fn multi_node_step<F: ArkPrimeField>(
     let shift = FpVar::constant(csc.shift_powers[1]); // We want 2^{32}.
 
     let offsets = [
-        FpVar::constant(F::ONE),
-        FpVar::constant(F::ONE),
+        FpVar::constant(F::ZERO),
+        FpVar::constant(F::ZERO),
         FpVar::constant(F::from(csc.tree_ram_offset as u64)),
         FpVar::constant(F::from(csc.rule_ram_offset as u64)),
         FpVar::constant(F::from(csc.np_ram_offset as u64)),
