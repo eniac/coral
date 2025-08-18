@@ -1,0 +1,276 @@
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.21
+	System time (seconds): 0.24
+	Percent of CPU this job got: 1075%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 632128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40691
+	Voluntary context switches: 1
+	Involuntary context switches: 30757
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.34
+	System time (seconds): 0.21
+	Percent of CPU this job got: 1062%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 636784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40722
+	Voluntary context switches: 0
+	Involuntary context switches: 20104
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.45
+	System time (seconds): 0.21
+	Percent of CPU this job got: 1087%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 624320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40260
+	Voluntary context switches: 0
+	Involuntary context switches: 20928
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 50.96
+	System time (seconds): 0.20
+	Percent of CPU this job got: 1046%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 623264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40287
+	Voluntary context switches: 0
+	Involuntary context switches: 20841
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.65
+	System time (seconds): 0.22
+	Percent of CPU this job got: 1099%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 630032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40502
+	Voluntary context switches: 0
+	Involuntary context switches: 23959
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 50.96
+	System time (seconds): 0.19
+	Percent of CPU this job got: 1058%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 625152
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40358
+	Voluntary context switches: 0
+	Involuntary context switches: 17677
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.82
+	System time (seconds): 0.18
+	Percent of CPU this job got: 1108%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 629056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40509
+	Voluntary context switches: 0
+	Involuntary context switches: 16575
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.03
+	System time (seconds): 0.36
+	Percent of CPU this job got: 1003%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 636608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40958
+	Voluntary context switches: 0
+	Involuntary context switches: 56062
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.05
+	System time (seconds): 0.24
+	Percent of CPU this job got: 1045%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 631584
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40618
+	Voluntary context switches: 0
+	Involuntary context switches: 28237
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.48
+	System time (seconds): 0.22
+	Percent of CPU this job got: 1097%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 623920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40254
+	Voluntary context switches: 0
+	Involuntary context switches: 24615
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 50.73
+	System time (seconds): 0.22
+	Percent of CPU this job got: 1033%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 632528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40750
+	Voluntary context switches: 0
+	Involuntary context switches: 21865
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/dmv_veratad.txt ../../tests/results/timings/json_dmv_veratad_risc0_json.txt"
+	User time (seconds): 51.57
+	System time (seconds): 0.23
+	Percent of CPU this job got: 1082%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 636416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40962
+	Voluntary context switches: 0
+	Involuntary context switches: 23283
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

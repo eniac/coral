@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 422.58
+	System time (seconds): 1.07
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4819008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 304525
+	Voluntary context switches: 0
+	Involuntary context switches: 113367
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 424.00
+	System time (seconds): 0.99
+	Percent of CPU this job got: 1083%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4827104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 305509
+	Voluntary context switches: 2
+	Involuntary context switches: 94659
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 419.61
+	System time (seconds): 1.46
+	Percent of CPU this job got: 1067%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4835040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305636
+	Voluntary context switches: 0
+	Involuntary context switches: 198762
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 419.83
+	System time (seconds): 1.82
+	Percent of CPU this job got: 1065%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4827216
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305503
+	Voluntary context switches: 0
+	Involuntary context switches: 234097
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 421.91
+	System time (seconds): 1.07
+	Percent of CPU this job got: 1077%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4835632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 306029
+	Voluntary context switches: 0
+	Involuntary context switches: 122584
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 419.51
+	System time (seconds): 1.98
+	Percent of CPU this job got: 1063%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4818976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305054
+	Voluntary context switches: 0
+	Involuntary context switches: 273087
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 422.44
+	System time (seconds): 1.51
+	Percent of CPU this job got: 1075%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4835600
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305678
+	Voluntary context switches: 0
+	Involuntary context switches: 182441
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 420.97
+	System time (seconds): 1.16
+	Percent of CPU this job got: 1082%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4822672
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305200
+	Voluntary context switches: 0
+	Involuntary context switches: 149836
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 422.73
+	System time (seconds): 0.99
+	Percent of CPU this job got: 1093%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4835504
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305704
+	Voluntary context switches: 0
+	Involuntary context switches: 104595
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 423.74
+	System time (seconds): 0.91
+	Percent of CPU this job got: 1101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4827296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305022
+	Voluntary context switches: 0
+	Involuntary context switches: 95726
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/hibp.txt ../../tests/results/timings/json_hibp_risc0_json.txt"
+	User time (seconds): 424.27
+	System time (seconds): 0.94
+	Percent of CPU this job got: 1094%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4824080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305285
+	Voluntary context switches: 0
+	Involuntary context switches: 97530
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

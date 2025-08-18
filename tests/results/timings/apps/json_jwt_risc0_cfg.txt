@@ -1,0 +1,12 @@
+../../tests/test_docs/json/jwt.txt,../../grammars/json.pest,1749001160,384
+---------,---------,---------,---------,"
+R,C,compilation,399,μs
+R,P,prove,546572796,μs
+R,V,verify,90708,μs
+S,P,receipt,1967448,bytes
+../../tests/test_docs/json/jwt.txt,../../grammars/json.pest,1749001707,384
+---------,---------,---------,---------,"
+R,P,prove,550322532,μs
+R,C,compilation,13,μs
+R,V,verify,101383,μs
+S,P,receipt,2188288,bytes

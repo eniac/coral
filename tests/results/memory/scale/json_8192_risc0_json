@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 412.68
+	System time (seconds): 1.23
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4799296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 306481
+	Voluntary context switches: 3
+	Involuntary context switches: 133204
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 416.96
+	System time (seconds): 2.52
+	Percent of CPU this job got: 1030%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:40.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4827456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305574
+	Voluntary context switches: 4
+	Involuntary context switches: 387662
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 423.10
+	System time (seconds): 1.21
+	Percent of CPU this job got: 1087%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4821920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305210
+	Voluntary context switches: 2
+	Involuntary context switches: 151027
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 421.80
+	System time (seconds): 1.01
+	Percent of CPU this job got: 1090%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4818576
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 304643
+	Voluntary context switches: 0
+	Involuntary context switches: 99381
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 422.48
+	System time (seconds): 1.03
+	Percent of CPU this job got: 1099%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4821072
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 304642
+	Voluntary context switches: 3
+	Involuntary context switches: 102270
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 423.86
+	System time (seconds): 1.04
+	Percent of CPU this job got: 1095%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4829248
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 305638
+	Voluntary context switches: 3
+	Involuntary context switches: 99668
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 424.82
+	System time (seconds): 1.02
+	Percent of CPU this job got: 1096%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4829312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305293
+	Voluntary context switches: 4
+	Involuntary context switches: 104841
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 420.79
+	System time (seconds): 1.29
+	Percent of CPU this job got: 1081%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4821712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 305127
+	Voluntary context switches: 1
+	Involuntary context switches: 157091
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 422.10
+	System time (seconds): 1.20
+	Percent of CPU this job got: 1085%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4828384
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305252
+	Voluntary context switches: 2
+	Involuntary context switches: 152533
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 421.73
+	System time (seconds): 0.99
+	Percent of CPU this job got: 1095%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4826624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 305493
+	Voluntary context switches: 1
+	Involuntary context switches: 95900
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/test_json_8192.txt ../../tests/results/timings/json_8192_risc0_json.txt"
+	User time (seconds): 422.79
+	System time (seconds): 1.01
+	Percent of CPU this job got: 1099%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4830256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 305760
+	Voluntary context switches: 0
+	Involuntary context switches: 97319
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

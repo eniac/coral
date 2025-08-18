@@ -1,0 +1,12 @@
+../../tests/test_docs/json/draftgroups_dk.txt,../../grammars/json.pest,1748922657,1547
+---------,---------,---------,---------,"
+R,C,compilation,13,μs
+R,V,verify,205840,μs
+R,P,prove,1219680979,μs
+S,P,receipt,4497024,bytes
+../../tests/test_docs/json/draftgroups_dk.txt,../../grammars/json.pest,1748923877,1547
+---------,---------,---------,---------,"
+R,V,verify,205986,μs
+R,C,compilation,12,μs
+R,P,prove,1215531927,μs
+S,P,receipt,4497024,bytes

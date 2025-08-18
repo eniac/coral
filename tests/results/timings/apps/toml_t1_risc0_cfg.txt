@@ -1,0 +1,12 @@
+../../tests/test_docs/toml/small_toml.txt,../../grammars/toml.pest,1748952048,379
+---------,---------,---------,---------,"
+R,P,prove,2303968113,μs
+R,C,compilation,16,μs
+R,V,verify,400545,μs
+S,P,receipt,8687512,bytes
+../../tests/test_docs/toml/small_toml.txt,../../grammars/toml.pest,1748954351,379
+---------,---------,---------,---------,"
+R,V,verify,399516,μs
+R,C,compilation,13,μs
+R,P,prove,2340434652,μs
+S,P,receipt,8687512,bytes

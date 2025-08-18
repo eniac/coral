@@ -1,0 +1,46 @@
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/draftgroups_dk.txt ../../grammars/json.pest ../../tests/results/timings/json_dk_risc0_cfg.txt"
+	User time (seconds): 13907.50
+	System time (seconds): 28.37
+	Percent of CPU this job got: 1142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:19.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9661280
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 9843709
+	Voluntary context switches: 90
+	Involuntary context switches: 2560891
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/draftgroups_dk.txt ../../grammars/json.pest ../../tests/results/timings/json_dk_risc0_cfg.txt"
+	User time (seconds): 13936.74
+	System time (seconds): 26.53
+	Percent of CPU this job got: 1148%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:15.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9556816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 9865595
+	Voluntary context switches: 30
+	Involuntary context switches: 2483659
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

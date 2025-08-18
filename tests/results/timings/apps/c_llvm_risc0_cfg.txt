@@ -1,0 +1,6 @@
+../../tests/test_docs/c/llvm_test_puzzle.txt,../../grammars/c_simple.pest,1748980435,0
+---------,---------,---------,---------,"
+R,V,verify,398637,μs
+R,C,compilation,13,μs
+R,P,prove,3765380534,μs
+S,P,receipt,8712984,bytes

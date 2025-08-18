@@ -1,0 +1,12 @@
+../../tests/test_docs/json/test_json_4096.txt,../../grammars/json.pest,1748877208,4096
+---------,---------,---------,---------,"
+R,P,prove,2100832057,μs
+R,V,verify,359744,μs
+R,C,compilation,18,μs
+S,P,receipt,7856544,bytes
+../../tests/test_docs/json/test_json_4096.txt,../../grammars/json.pest,1748879310,4096
+---------,---------,---------,---------,"
+R,P,prove,2094186932,μs
+R,V,verify,373417,μs
+R,C,compilation,13,μs
+S,P,receipt,7856544,bytes

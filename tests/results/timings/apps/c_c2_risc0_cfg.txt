@@ -1,0 +1,6 @@
+../../tests/test_docs/c/c2.txt,../../grammars/c_simple.pest,1748985408,237
+---------,---------,---------,---------,"
+R,V,verify,398637,μs
+R,C,compilation,13,μs
+R,P,prove,3765380534,μs
+S,P,receipt,8712984,bytes

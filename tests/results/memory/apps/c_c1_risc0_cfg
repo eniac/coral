@@ -1,0 +1,46 @@
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/c/c1.txt ../../grammars/c_simple.pest ../../tests/results/timings/c_c1_risc0_cfg.txt"
+	User time (seconds): 23833.23
+	System time (seconds): 143.82
+	Percent of CPU this job got: 1084%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 36:50.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8977024
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 17
+	Minor (reclaiming a frame) page faults: 25591824
+	Voluntary context switches: 104
+	Involuntary context switches: 17459653
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/c/c1.txt ../../grammars/c_simple.pest ../../tests/results/timings/c_c1_risc0_cfg.txt"
+	User time (seconds): 24078.80
+	System time (seconds): 93.23
+	Percent of CPU this job got: 1116%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 36:04.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9206512
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 23808406
+	Voluntary context switches: 97
+	Involuntary context switches: 8344721
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

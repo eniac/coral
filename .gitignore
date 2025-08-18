@@ -15,3 +15,5 @@ Cargo.lock
 
 *.ptau 
 .DS_Store
+*.cmt 
+*.proof

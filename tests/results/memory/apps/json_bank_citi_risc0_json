@@ -1,0 +1,506 @@
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.69
+	System time (seconds): 0.33
+	Percent of CPU this job got: 1019%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1236240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78418
+	Voluntary context switches: 1
+	Involuntary context switches: 34699
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 102.94
+	System time (seconds): 0.63
+	Percent of CPU this job got: 1024%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1242080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78902
+	Voluntary context switches: 0
+	Involuntary context switches: 95995
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 102.98
+	System time (seconds): 0.55
+	Percent of CPU this job got: 1046%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1239952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78642
+	Voluntary context switches: 0
+	Involuntary context switches: 76474
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 102.84
+	System time (seconds): 0.53
+	Percent of CPU this job got: 1050%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1246688
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79111
+	Voluntary context switches: 0
+	Involuntary context switches: 75494
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 102.94
+	System time (seconds): 0.37
+	Percent of CPU this job got: 1074%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1249552
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79378
+	Voluntary context switches: 0
+	Involuntary context switches: 44154
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.88
+	System time (seconds): 0.34
+	Percent of CPU this job got: 1084%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1249840
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79428
+	Voluntary context switches: 0
+	Involuntary context switches: 35626
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.52
+	System time (seconds): 0.34
+	Percent of CPU this job got: 1076%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1243408
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79005
+	Voluntary context switches: 0
+	Involuntary context switches: 38702
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.97
+	System time (seconds): 0.34
+	Percent of CPU this job got: 1100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1245792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79213
+	Voluntary context switches: 0
+	Involuntary context switches: 40714
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.17
+	System time (seconds): 0.33
+	Percent of CPU this job got: 1076%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1245920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79000
+	Voluntary context switches: 0
+	Involuntary context switches: 36388
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.80
+	System time (seconds): 0.33
+	Percent of CPU this job got: 1082%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1247888
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79337
+	Voluntary context switches: 0
+	Involuntary context switches: 36604
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.60
+	System time (seconds): 0.31
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1246176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79102
+	Voluntary context switches: 0
+	Involuntary context switches: 36133
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.77
+	System time (seconds): 0.31
+	Percent of CPU this job got: 1022%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1246112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79186
+	Voluntary context switches: 0
+	Involuntary context switches: 29578
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.30
+	System time (seconds): 0.31
+	Percent of CPU this job got: 1085%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1243408
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78980
+	Voluntary context switches: 0
+	Involuntary context switches: 32855
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.57
+	System time (seconds): 0.30
+	Percent of CPU this job got: 1090%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1239792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78757
+	Voluntary context switches: 0
+	Involuntary context switches: 31333
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 104.17
+	System time (seconds): 0.32
+	Percent of CPU this job got: 1081%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1248112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79303
+	Voluntary context switches: 0
+	Involuntary context switches: 30923
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.96
+	System time (seconds): 0.30
+	Percent of CPU this job got: 1094%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1245904
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79093
+	Voluntary context switches: 0
+	Involuntary context switches: 28611
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 104.24
+	System time (seconds): 0.30
+	Percent of CPU this job got: 1088%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1247744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79188
+	Voluntary context switches: 0
+	Involuntary context switches: 29918
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 104.08
+	System time (seconds): 0.29
+	Percent of CPU this job got: 1093%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1247344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79137
+	Voluntary context switches: 0
+	Involuntary context switches: 28524
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.49
+	System time (seconds): 0.29
+	Percent of CPU this job got: 1093%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1248016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 79200
+	Voluntary context switches: 0
+	Involuntary context switches: 32106
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.56
+	System time (seconds): 0.30
+	Percent of CPU this job got: 1097%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1245216
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78993
+	Voluntary context switches: 0
+	Involuntary context switches: 30811
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.52
+	System time (seconds): 0.31
+	Percent of CPU this job got: 1079%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1235392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78351
+	Voluntary context switches: 0
+	Involuntary context switches: 33099
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/json-example ../../tests/test_docs/json/bank_citi.txt ../../tests/results/timings/json_citi_risc0_json.txt"
+	User time (seconds): 103.37
+	System time (seconds): 0.30
+	Percent of CPU this job got: 1076%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1238928
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 78595
+	Voluntary context switches: 0
+	Involuntary context switches: 27988
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

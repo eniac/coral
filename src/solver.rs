@@ -834,7 +834,6 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         #[cfg(feature = "metrics")]
         log::tic(Component::Solver, "ic");
-        println!("rule size {:?} ", self.rule_size);
         let (blinds, ram_hints, ram_batch_size, rm) = mem_builder.new_running_mem(
             vec![
                 (self.tree_ram_tag, self.batch_size),

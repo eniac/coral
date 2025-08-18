@@ -1,0 +1,12 @@
+../../tests/test_docs/json/bank_citi.txt,../../grammars/json.pest,1748917714,2338
+---------,---------,---------,---------,"
+R,V,verify,241377,μs
+R,P,prove,1370512449,μs
+R,C,compilation,214,μs
+S,P,receipt,5279992,bytes
+../../tests/test_docs/json/bank_citi.txt,../../grammars/json.pest,1748919085,2338
+---------,---------,---------,---------,"
+R,C,compilation,15,μs
+R,V,verify,243228,μs
+R,P,prove,1378738105,μs
+S,P,receipt,5314744,bytes

@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.29
+	System time (seconds): 0.52
+	Percent of CPU this job got: 1079%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1242416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81320
+	Voluntary context switches: 0
+	Involuntary context switches: 64701
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.50
+	System time (seconds): 0.49
+	Percent of CPU this job got: 1080%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1239520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81469
+	Voluntary context switches: 0
+	Involuntary context switches: 62688
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.61
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1084%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1249392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81941
+	Voluntary context switches: 0
+	Involuntary context switches: 62674
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.54
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1081%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1248544
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81837
+	Voluntary context switches: 0
+	Involuntary context switches: 61732
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.43
+	System time (seconds): 0.49
+	Percent of CPU this job got: 1074%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1244448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81770
+	Voluntary context switches: 0
+	Involuntary context switches: 63649
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.51
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1084%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82217
+	Voluntary context switches: 0
+	Involuntary context switches: 60427
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.53
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1083%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1239712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81399
+	Voluntary context switches: 0
+	Involuntary context switches: 64909
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.57
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1068%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1240224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81493
+	Voluntary context switches: 0
+	Involuntary context switches: 68983
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.25
+	System time (seconds): 0.49
+	Percent of CPU this job got: 1068%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252672
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82181
+	Voluntary context switches: 0
+	Involuntary context switches: 63658
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.33
+	System time (seconds): 0.49
+	Percent of CPU this job got: 1076%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1250304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81857
+	Voluntary context switches: 3
+	Involuntary context switches: 66303
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/llvm_test_puzzle_mod.txt ../../tests/results/timings/apps/c_llvm_risc0_c.txt"
+	User time (seconds): 103.31
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1069%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1250432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81942
+	Voluntary context switches: 0
+	Involuntary context switches: 62904
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

@@ -1,0 +1,12 @@
+../../tests/test_docs/json/hibp.txt,../../grammars/json.pest,1748926002,10873
+---------,---------,---------,---------,"
+R,P,prove,5977063101,μs
+R,V,verify,1014793,μs
+R,C,compilation,17,μs
+S,P,receipt,22190808,bytes
+../../tests/test_docs/json/hibp.txt,../../grammars/json.pest,1748931980,10873
+---------,---------,---------,---------,"
+R,C,compilation,16,μs
+R,P,prove,5927752708,μs
+R,V,verify,1014659,μs
+S,P,receipt,22178584,bytes

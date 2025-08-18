@@ -1,0 +1,12 @@
+../../tests/test_docs/c/c1.txt,../../grammars/c_simple.pest,1748981033,56
+---------,---------,---------,---------,"
+R,V,verify,362439,μs
+R,P,prove,2209370458,μs
+R,C,compilation,228,μs
+S,P,receipt,7869792,bytes
+../../tests/test_docs/c/c1.txt,../../grammars/c_simple.pest,1748983243,56
+---------,---------,---------,---------,"
+R,P,prove,2164417920,μs
+R,C,compilation,15,μs
+R,V,verify,371270,μs
+S,P,receipt,8090632,bytes

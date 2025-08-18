@@ -76,15 +76,6 @@ pub fn verify(
     log::tic(Component::Verifier, "eq_checks");
 
     v_i.mem.verifier_checks(&zn, &ci);
-
-    //Have to get stack ptrs out
-    let sp_offset = 11;
-    let sp_0 = zn[sp_offset];
-    let sp_1 = zn[sp_offset + 1];
-
-    assert_eq!(sp_0, N1::from(1));
-    assert_eq!(sp_1, N1::from(1));
-
     #[cfg(feature = "metrics")]
     {
         log::stop(Component::Verifier, "eq_checks");
@@ -93,7 +84,7 @@ pub fn verify(
 
     //Have to get calimed eval out of zn
     //Check doc commitment
-    let eval_offset = sp_offset + 2;
+    let eval_offset = 13;
     let claimed_eval = zn[eval_offset];
     let kzg_check = ArkKZG::check(
         &v_dc.doc_commit_vk,

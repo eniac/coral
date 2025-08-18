@@ -1,0 +1,46 @@
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/toml/small_toml.txt ../../grammars/toml.pest ../../tests/results/timings/toml_small_risc0_cfg.txt"
+	User time (seconds): 26241.41
+	System time (seconds): 58.80
+	Percent of CPU this job got: 1142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 38:22.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9778976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 19302547
+	Voluntary context switches: 118
+	Involuntary context switches: 5841322
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/toml/small_toml.txt ../../grammars/toml.pest ../../tests/results/timings/toml_small_risc0_cfg.txt"
+	User time (seconds): 26082.73
+	System time (seconds): 91.69
+	Percent of CPU this job got: 1117%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 39:02.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9316368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 23506595
+	Voluntary context switches: 100
+	Involuntary context switches: 8909893
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

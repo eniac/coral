@@ -1,0 +1,12 @@
+../../tests/test_docs/toml/arkr1cs_toml.txt,../../grammars/toml.pest,1748937909,2799
+---------,---------,---------,---------,"
+R,V,verify,628286,μs
+R,P,prove,3650771263,μs
+R,C,compilation,13,μs
+S,P,receipt,13711912,bytes
+../../tests/test_docs/toml/arkr1cs_toml.txt,../../grammars/toml.pest,1748941560,2799
+---------,---------,---------,---------,"
+R,C,compilation,16,μs
+R,V,verify,627622,μs
+R,P,prove,3638056200,μs
+S,P,receipt,13711912,bytes

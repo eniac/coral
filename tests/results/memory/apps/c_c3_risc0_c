@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.62
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1080%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1249616
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82104
+	Voluntary context switches: 0
+	Involuntary context switches: 66433
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.41
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1075%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1249488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81887
+	Voluntary context switches: 0
+	Involuntary context switches: 63436
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.65
+	System time (seconds): 0.47
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252736
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82119
+	Voluntary context switches: 0
+	Involuntary context switches: 61535
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.46
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1084%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82226
+	Voluntary context switches: 0
+	Involuntary context switches: 63315
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.41
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1070%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1244144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81634
+	Voluntary context switches: 0
+	Involuntary context switches: 63096
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.58
+	System time (seconds): 0.51
+	Percent of CPU this job got: 1088%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82220
+	Voluntary context switches: 0
+	Involuntary context switches: 66235
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.44
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1073%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1252768
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82262
+	Voluntary context switches: 0
+	Involuntary context switches: 64907
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.57
+	System time (seconds): 0.50
+	Percent of CPU this job got: 1086%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1253056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 82240
+	Voluntary context switches: 0
+	Involuntary context switches: 65395
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.43
+	System time (seconds): 0.49
+	Percent of CPU this job got: 1070%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1250720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81994
+	Voluntary context switches: 0
+	Involuntary context switches: 61663
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.78
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1242368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81653
+	Voluntary context switches: 0
+	Involuntary context switches: 62536
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/c-example ../../tests/test_docs/c/c3.txt ../../tests/results/timings/apps/c_c3_risc0_c.txt"
+	User time (seconds): 103.65
+	System time (seconds): 0.48
+	Percent of CPU this job got: 1089%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1246528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 81589
+	Voluntary context switches: 0
+	Involuntary context switches: 61784
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

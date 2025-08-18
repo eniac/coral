@@ -1,0 +1,12 @@
+../../tests/test_docs/json/bank_plaid.txt,../../grammars/json.pest,1748920464,312
+---------,---------,---------,---------,"
+R,P,prove,489850417,μs
+R,C,compilation,13,μs
+R,V,verify,89581,μs
+S,P,receipt,1954200,bytes
+../../tests/test_docs/json/bank_plaid.txt,../../grammars/json.pest,1748920954,312
+---------,---------,---------,---------,"
+R,P,prove,493126727,μs
+R,V,verify,89580,μs
+R,C,compilation,15,μs
+S,P,receipt,1954200,bytes

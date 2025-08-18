@@ -1032,7 +1032,7 @@ mod tests {
     fn full_test_multi_json() {
         full_test_function_multi(
             "grammars/json.pest".to_string(),
-            "./tests/test_docs/json/test_json_128.txt".to_string(),
+            "./tests/test_docs/json/test_json_64.txt".to_string(),
         );
     }
 

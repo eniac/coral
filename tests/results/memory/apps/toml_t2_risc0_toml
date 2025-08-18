@@ -1,0 +1,253 @@
+Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 870.05
+	System time (seconds): 1.64
+	Percent of CPU this job got: 1142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9618256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 604934
+	Voluntary context switches: 4
+	Involuntary context switches: 172749
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 870.15
+	System time (seconds): 1.56
+	Percent of CPU this job got: 1146%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9634064
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 611268
+	Voluntary context switches: 1
+	Involuntary context switches: 166690
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 869.61
+	System time (seconds): 1.60
+	Percent of CPU this job got: 1148%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:15.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9653120
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 611662
+	Voluntary context switches: 0
+	Involuntary context switches: 167132
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 872.54
+	System time (seconds): 1.66
+	Percent of CPU this job got: 1146%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9645696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 609773
+	Voluntary context switches: 0
+	Involuntary context switches: 184946
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 873.10
+	System time (seconds): 1.59
+	Percent of CPU this job got: 1149%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9629840
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 607740
+	Voluntary context switches: 1
+	Involuntary context switches: 167203
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 872.47
+	System time (seconds): 1.60
+	Percent of CPU this job got: 1146%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9652816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 609666
+	Voluntary context switches: 0
+	Involuntary context switches: 168226
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 871.31
+	System time (seconds): 1.61
+	Percent of CPU this job got: 1142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9640528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 609390
+	Voluntary context switches: 0
+	Involuntary context switches: 168002
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 866.98
+	System time (seconds): 1.71
+	Percent of CPU this job got: 1131%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9645984
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 609751
+	Voluntary context switches: 0
+	Involuntary context switches: 162215
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 869.93
+	System time (seconds): 1.75
+	Percent of CPU this job got: 1136%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9633696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 608003
+	Voluntary context switches: 0
+	Involuntary context switches: 169648
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 867.04
+	System time (seconds): 1.91
+	Percent of CPU this job got: 1121%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9660416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 610797
+	Voluntary context switches: 3
+	Involuntary context switches: 189341
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/toml-example ../../tests/test_docs/toml/coral_toml.txt ../../tests/results/timings/toml_coral_risc0_toml.txt"
+	User time (seconds): 868.06
+	System time (seconds): 1.72
+	Percent of CPU this job got: 1132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9652800
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 612072
+	Voluntary context switches: 6
+	Involuntary context switches: 170484
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
