@@ -5,7 +5,7 @@
 
 echo "citi" 
 declare -a b_citi=(575 611 652 698 752 814)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_citi[@]}"
@@ -21,7 +21,7 @@ done
 
 echo "plaid" 
 declare -a b_plaid=(109 118 128 141 157 176 201)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_plaid[@]}"
@@ -36,7 +36,7 @@ done
 
 echo "veratad" 
 declare -a b_dmv=(249 274 305)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_dmv[@]}"
@@ -52,7 +52,7 @@ done
 
 echo "dk" 
 declare -a b_dk=(592 641 699 769 854)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_dk[@]}"
@@ -67,7 +67,7 @@ done
 
 echo "hibps" 
 declare -a b_hs=(106 119 136 158 190)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_hs[@]}"
@@ -82,7 +82,7 @@ done
 
 echo "jwt" 
 declare -a b_jwt=(109 118 128 141 157 176 201)
-for i in {0..5}
+for i in {0..10}
 do 
 echo "$i"
 for j in "${b_jwt[@]}"

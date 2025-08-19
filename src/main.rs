@@ -26,7 +26,7 @@ fn main() -> Result<()> {
     let mut opt_grammar_graph: Option<GrammarGraph> = None;
     let mut opt_doc: Option<Vec<char>> = None;
 
-    if opt.commit || opt.prove || opt.e2e {
+    // if opt.commit || opt.prove || opt.e2e {
         assert!(
             input_text_path.is_some(),
             "Input text file must be provided for commit or prove"
@@ -39,7 +39,7 @@ fn main() -> Result<()> {
 
         opt_grammar_graph = Some(grammar_graph);
         opt_doc = Some(doc);
-    }
+    // }
 
     if opt.e2e || opt.commit {
         #[cfg(feature = "metrics")]
@@ -144,7 +144,7 @@ fn main() -> Result<()> {
 
     #[cfg(feature = "metrics")]
     {
-        if opt_grammar_graph.is_some() && input_text_path.is_some() {
+        // if opt_grammar_graph.is_some() && input_text_path.is_some() {
             metrics_file(
                 opt.metrics.clone(),
                 &grammar_path,
@@ -155,7 +155,7 @@ fn main() -> Result<()> {
                 opt_grammar_graph.as_ref().unwrap().rule_count,
             );
             log::write_csv(&opt.metrics.clone().unwrap().as_path().display().to_string()).unwrap();
-        }
+        // }
     }
     Ok(())
 }
