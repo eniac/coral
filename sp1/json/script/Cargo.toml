@@ -1,0 +1,13 @@
+[package]
+name = "json-script"
+version = { workspace = true }
+edition = { workspace = true }
+publish = false
+
+[dependencies]
+serde_json = { workspace = true }
+sp1-sdk = { workspace = true }
+lib = { path = "../lib", package = "json-lib" }
+
+[build-dependencies]
+sp1-build = { workspace = true }
